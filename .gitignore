@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtuelle Umgebungen
+venv/
+.venv/
+env/
+
+# VS Code
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Test- und Cache-Dateien
+.pytest_cache/
+.mypy_cache/
+
+# Betriebssystem
+.DS_Store
+Thumbs.db
+
+# Daten und Exporte
+*.csv
+*.xlsx
+*.xls
+
+# Gespeicherte Webseiten
+*.html
+
+# Log-Dateien
+*.log
