@@ -1,0 +1,25 @@
+{
+  "volkswagen_ag": {
+    "name": "Volkswagen AG",
+    "selectors": {
+      "job_count": ".paginationLabel"
+    },
+    "patterns": {
+      "job_count": "(?:von|of)\\s+(\\d+)"
+    }
+  },
+  "deutsche_post_dhl": {
+    "name": "Deutsche Post DHL Group",
+    "selectors": {
+      "job_count": [
+        "span[class*='phSearch__results']",
+        "[data-ph-id*='searchSummary']",
+        ".search-results-count",
+        "span[class*='result']"
+      ]
+    },
+    "patterns": {
+      "job_count": "(\\d+)\\s*(?:Stellenangebote|Stelle|Job|Position|results?)"
+    }
+  }
+}
