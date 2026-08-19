@@ -21,5 +21,10 @@
     "patterns": {
       "job_count": "(\\d+)\\s*(?:Stellenangebote|Stelle|Job|Position|results?)"
     }
+  },
+  "pepperl_fuchs_se": {
+    "name": "Pepperl+Fuchs SE",
+    "parser": "workday",
+    "jobs_api": "https://pepperlfuchs.wd103.myworkdayjobs.com/wday/cxs/pepperlfuchs/PepperlFuchs/jobs"
   }
 }

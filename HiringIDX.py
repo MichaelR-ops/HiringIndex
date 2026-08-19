@@ -21,7 +21,7 @@ def main() -> None:
     
     # Load companies
     print("\nLoading company data...")
-    companies_df = load_companies("VW_Test.xlsx")
+    companies_df = load_companies("Test_Struktur.xlsx")
     print(f"Loaded {len(companies_df)} rows")
     
     # Process companies and extract job counts

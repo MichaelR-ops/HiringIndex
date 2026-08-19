@@ -1,8 +1,51 @@
 """Generic and company-specific job listing parsers."""
 
 import re
-from typing import Dict, Any, Optional, Union, List
+import requests
+from typing import Any, Callable, Dict, Mapping
 from bs4 import BeautifulSoup
+from .fetcher import fetch_career_page
+
+
+JobCountParser = Callable[[str, Mapping[str, Any]], int]
+
+
+def parse_html_job_count(url: str, config: Mapping[str, Any]) -> int:
+    """Fetch an HTML career page and extract its configured job count."""
+    return extract_job_count(fetch_career_page(url), dict(config))
+
+
+def parse_workday_job_count(url: str, config: Mapping[str, Any]) -> int:
+    """Fetch a Workday jobs API and return its total job count."""
+    jobs_api = config.get("jobs_api", url)
+    if not isinstance(jobs_api, str) or not jobs_api:
+        raise ValueError("No Workday jobs API configured")
+    response = requests.post(
+        jobs_api,
+        json={
+            "appliedFacets": {},
+            "limit": 20,
+            "offset": 0,
+            "searchText": ""
+        },
+        headers={
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "User-Agent": "HiringIndex/1.0"
+        },
+        timeout=10
+    )
+    response.raise_for_status()
+    data = response.json()
+    if not isinstance(data, Mapping):
+        raise ValueError("Workday response must be a JSON object")
+
+    total = data.get("total")
+    if isinstance(total, bool) or not isinstance(total, int):
+        raise ValueError("Workday response does not contain an integer total")
+    if total < 0:
+        raise ValueError("Workday job count cannot be negative")
+    return total
 
 
 def extract_job_count(

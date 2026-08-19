@@ -1,6 +1,5 @@
-"""Web fetching and HTML retrieval."""
+"""Web fetching for HTML career pages."""
 
-from typing import Optional
 import requests
 from bs4 import BeautifulSoup
 

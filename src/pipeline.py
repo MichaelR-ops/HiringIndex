@@ -1,19 +1,23 @@
 """Main processing pipeline for hiring index calculation."""
 
 from datetime import datetime
-from typing import List, Dict, Any
+from typing import Any, Dict, List, Mapping
 from pathlib import Path
 import pandas as pd
 
-from .fetcher import fetch_career_page
-from .parser import extract_job_count
+from .parser import (
+    JobCountParser,
+    parse_html_job_count,
+    parse_workday_job_count,
+)
 from .calculator import calculate_hiring_index
 from .config import load_company_config, get_company_parser_config
 
 
 def process_companies(
     companies_df: pd.DataFrame,
-    config_path: str = "config/companies.json"
+    config_path: str = "config/companies.json",
+    parser_registry: Mapping[str, JobCountParser] | None = None
 ) -> pd.DataFrame:
     """
     Process all companies and calculate hiring indices.
@@ -21,6 +25,7 @@ def process_companies(
     Args:
         companies_df: DataFrame with company information
         config_path: Path to company configuration file
+        parser_registry: Mapping of parser names to parser implementations
         
     Returns:
         DataFrame with results including date, company, job count, and hiring index
@@ -31,6 +36,10 @@ def process_companies(
         config_file = Path(__file__).parent.parent / config_path
     
     config = load_company_config(str(config_file))
+    parsers = parser_registry or {
+        "html": parse_html_job_count,
+        "workday": parse_workday_job_count
+    }
     results: List[Dict[str, Any]] = []
     
     for _, row in companies_df.iterrows():
@@ -45,17 +54,17 @@ def process_companies(
         print(f"Processing {company_name}...")
         
         try:
-            # Fetch career page
-            soup = fetch_career_page(career_url)
-            
             # Get company-specific config
             company_config = get_company_parser_config(company_name, config)
             
             if not company_config:
                 raise ValueError(f"No configuration found for {company_name}")
             
-            # Extract job count using generic parser with config
-            job_count = extract_job_count(soup, company_config)
+            parser_name = company_config.get("parser", "html")
+            parser = parsers.get(parser_name)
+            if parser is None:
+                raise ValueError(f"No parser registered for {parser_name}")
+            job_count = parser(career_url, company_config)
             print(f"  Jobs found: {job_count}")
             
             # Calculate hiring index
