@@ -26,5 +26,12 @@
     "name": "Pepperl+Fuchs SE",
     "parser": "workday",
     "jobs_api": "https://pepperlfuchs.wd103.myworkdayjobs.com/wday/cxs/pepperlfuchs/PepperlFuchs/jobs"
+  },
+  "kern_liebers_gmbh": {
+    "name": "Kern Liebers",
+    "url": "https://www.kern-liebers.com/karriere/offene-stellen/",
+    "selectors": {
+      "job_count_rows": "#jobOfferTable tbody tr"
+    }
   }
 }

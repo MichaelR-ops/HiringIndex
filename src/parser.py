@@ -12,7 +12,10 @@ JobCountParser = Callable[[str, Mapping[str, Any]], int]
 
 def parse_html_job_count(url: str, config: Mapping[str, Any]) -> int:
     """Fetch an HTML career page and extract its configured job count."""
-    return extract_job_count(fetch_career_page(url), dict(config))
+    page_url = config.get("url", url)
+    if not isinstance(page_url, str) or not page_url:
+        raise ValueError("HTML parser URL must be a non-empty string")
+    return extract_job_count(fetch_career_page(page_url), dict(config))
 
 
 def parse_workday_job_count(url: str, config: Mapping[str, Any]) -> int:
@@ -70,6 +73,15 @@ def extract_job_count(
     """
     selectors = config.get("selectors", {})
     patterns = config.get("patterns", {})
+
+    count_selector = selectors.get("job_count_rows")
+    if count_selector:
+        rows = soup.select(count_selector)
+        if not rows:
+            raise ValueError(
+                f"No job rows found with selector: {count_selector}"
+            )
+        return len(rows)
     
     selector = selectors.get("job_count")
     if not selector:
