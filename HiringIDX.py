@@ -30,8 +30,8 @@ def main() -> None:
     
     # Save results
     print("\nSaving results...")
-    save_hiring_index(result_df, "hiring_index.csv", format="csv")
-    print("Results saved to hiring_index.csv")
+    save_hiring_index(result_df, "hiring_index.xlsx", format="xlsx")
+    print("Results saved to hiring_index.xlsx")
     
     # Display summary
     print("\n" + "=" * 60)

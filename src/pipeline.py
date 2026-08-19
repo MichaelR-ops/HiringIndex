@@ -45,7 +45,7 @@ def process_companies(
     for _, row in companies_df.iterrows():
         company_name = row["Unternehmen"]
         career_url = row["Karriere-URL"]
-        employees = row["MA Deutschland"]
+        employees = row["MA Weltweit"]
         
         # Skip empty rows
         if pd.isna(company_name) or pd.isna(career_url):
