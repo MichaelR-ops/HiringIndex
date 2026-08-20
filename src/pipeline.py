@@ -9,6 +9,7 @@ from .parser import (
     JobCountParser,
     parse_html_job_count,
     parse_workday_job_count,
+    parse_sap_successfactors_job_count,
 )
 from .calculator import calculate_hiring_index
 from .config import load_company_config, get_company_parser_config
@@ -38,7 +39,8 @@ def process_companies(
     config = load_company_config(str(config_file))
     parsers = parser_registry or {
         "html": parse_html_job_count,
-        "workday": parse_workday_job_count
+        "workday": parse_workday_job_count,
+        "sap_successfactors": parse_sap_successfactors_job_count
     }
     results: List[Dict[str, Any]] = []
     

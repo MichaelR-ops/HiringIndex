@@ -27,11 +27,34 @@
     "parser": "workday",
     "jobs_api": "https://pepperlfuchs.wd103.myworkdayjobs.com/wday/cxs/pepperlfuchs/PepperlFuchs/jobs"
   },
-  "kern_liebers_gmbh": {
-    "name": "Kern Liebers",
+  "KERN_LIEBERS": {
+    "name": "KERN LIEBERS GmbH & Co. KG",
     "url": "https://www.kern-liebers.com/karriere/offene-stellen/",
     "selectors": {
       "job_count_rows": "#jobOfferTable tbody tr"
+    }
+  },
+  "KUMMER": {
+    "name": "Kummer GmbH & Co. KG",
+    "url": "https://www.kummer-gmbh.de/karriere.html#c875",
+    "selectors": {
+      "job_count_rows": "#c4621 .card-header h5"
+    }
+  },
+  "alfred_ritter": {
+    "name": "Alfred Ritter GmbH & Co. KG",
+    "parser": "sap_successfactors",
+    "jobs_api": "https://jobs.ritter-sport.com/services/recruiting/v1/jobs",
+    "locale": "de_DE"
+  },
+  "mvz_aesculabor_karlsruhe": {
+    "name": "Bioscientia MVZ Labor Karlsruhe GmbH",
+    "url": "https://mvz-karlsruhe.career.softgarden.de/",
+    "selectors": {
+      "job_count": "h2[class*='JobList__Title']"
+    },
+    "patterns": {
+      "job_count": "(\\d+)\\s+aktuelle\\s+Stellenangebote"
     }
   }
 }

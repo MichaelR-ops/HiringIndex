@@ -51,6 +51,51 @@ def parse_workday_job_count(url: str, config: Mapping[str, Any]) -> int:
     return total
 
 
+def parse_sap_successfactors_job_count(
+    url: str,
+    config: Mapping[str, Any]
+) -> int:
+    """Fetch a SAP SuccessFactors jobs API and return its total job count."""
+    jobs_api = config.get("jobs_api", url)
+    if not isinstance(jobs_api, str) or not jobs_api:
+        raise ValueError("No SAP SuccessFactors jobs API configured")
+    response = requests.post(
+        jobs_api,
+        json={
+            "locale": config.get("locale", "de_DE"),
+            "pageNumber": 0,
+            "sortBy": "",
+            "keywords": "",
+            "location": "",
+            "facetFilters": {},
+            "brand": "",
+            "skills": [],
+            "categoryId": 0,
+            "alertId": "",
+            "rcmCandidateId": ""
+        },
+        headers={
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "User-Agent": "HiringIndex/1.0"
+        },
+        timeout=10
+    )
+    response.raise_for_status()
+    data = response.json()
+    if not isinstance(data, Mapping):
+        raise ValueError("SAP SuccessFactors response must be a JSON object")
+
+    total = data.get("totalJobs")
+    if isinstance(total, bool) or not isinstance(total, int):
+        raise ValueError(
+            "SAP SuccessFactors response does not contain an integer totalJobs"
+        )
+    if total < 0:
+        raise ValueError("SAP SuccessFactors job count cannot be negative")
+    return total
+
+
 def extract_job_count(
     soup: BeautifulSoup,
     config: Dict[str, Any]
