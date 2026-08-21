@@ -23,9 +23,9 @@ Thumbs.db
 
 # Daten und Exporte
 *.csv
-*.xlsx
+*hiring_index.xlsx
+
 *.xls
-*.md
 
 /scraps/
 
