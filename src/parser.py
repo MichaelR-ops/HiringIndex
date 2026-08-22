@@ -20,11 +20,11 @@ def parse_html_job_count(url: str, config: Mapping[str, Any]) -> int:
 
 def parse_workday_job_count(url: str, config: Mapping[str, Any]) -> int:
     """Fetch a Workday jobs API and return its total job count."""
-    jobs_api = config.get("jobs_api", url)
-    if not isinstance(jobs_api, str) or not jobs_api:
-        raise ValueError("No Workday jobs API configured")
+    target_url = config.get("url", url)
+    if not isinstance(target_url, str) or not target_url:
+        raise ValueError("No Workday URL configured")
     response = requests.post(
-        jobs_api,
+        target_url,
         json={
             "appliedFacets": {},
             "limit": 20,
@@ -56,11 +56,11 @@ def parse_sap_successfactors_job_count(
     config: Mapping[str, Any]
 ) -> int:
     """Fetch a SAP SuccessFactors jobs API and return its total job count."""
-    jobs_api = config.get("jobs_api", url)
-    if not isinstance(jobs_api, str) or not jobs_api:
-        raise ValueError("No SAP SuccessFactors jobs API configured")
+    target_url = config.get("url", url)
+    if not isinstance(target_url, str) or not target_url:
+        raise ValueError("No SAP SuccessFactors URL configured")
     response = requests.post(
-        jobs_api,
+        target_url,
         json={
             "locale": config.get("locale", "de_DE"),
             "pageNumber": 0,

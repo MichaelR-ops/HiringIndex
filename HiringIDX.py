@@ -5,7 +5,7 @@ This module loads company information, fetches their career pages,
 extracts open job counts, and calculates hiring indices.
 """
 
-from src.io_handler import load_companies, save_hiring_index
+from src.io_handler import save_hiring_index
 from src.pipeline import process_companies
 
 
@@ -13,20 +13,15 @@ def main() -> None:
     """
     Main entry point for hiring index calculation.
     
-    Loads companies from test file, processes them, and saves results.
+    Loads companies from JSON, processes them, and saves results.
     """
     print("=" * 60)
     print("HiringIndex - Job Listing Analyzer")
     print("=" * 60)
     
-    # Load companies
-    print("\nLoading company data...")
-    companies_df = load_companies("Test_Struktur.xlsx")
-    print(f"Loaded {len(companies_df)} rows")
-    
     # Process companies and extract job counts
     print("\nProcessing companies...")
-    result_df = process_companies(companies_df)
+    result_df = process_companies("config/companies.json")
     
     # Save results
     print("\nSaving results...")

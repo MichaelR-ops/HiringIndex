@@ -1,55 +1,52 @@
 {
-  "volkswagen_ag": {
-    "name": "Volkswagen AG",
-    "selectors": {
-      "job_count": ".paginationLabel"
-    },
-    "patterns": {
-      "job_count": "(?:von|of)\\s+(\\d+)"
-    }
-  },
-  "deutsche_post_dhl": {
-    "name": "Deutsche Post DHL Group",
-    "selectors": {
-      "job_count": [
-        "span[class*='phSearch__results']",
-        "[data-ph-id*='searchSummary']",
-        ".search-results-count",
-        "span[class*='result']"
-      ]
-    },
-    "patterns": {
-      "job_count": "(\\d+)\\s*(?:Stellenangebote|Stelle|Job|Position|results?)"
-    }
-  },
   "pepperl_fuchs_se": {
-    "name": "Pepperl+Fuchs SE",
+    "firma": "Pepperl+Fuchs SE",
+    "mitarbeiter_zahl": 6280,
+    "mitarbeiter_basis": "weltweit_fallback",
+    "status": "offen",
+    "notiz": "migriert aus Test_Struktur.xlsx",
     "parser": "workday",
-    "jobs_api": "https://pepperlfuchs.wd103.myworkdayjobs.com/wday/cxs/pepperlfuchs/PepperlFuchs/jobs"
+    "url": "https://pepperlfuchs.wd103.myworkdayjobs.com/wday/cxs/pepperlfuchs/PepperlFuchs/jobs"
   },
   "KERN_LIEBERS": {
-    "name": "KERN LIEBERS GmbH & Co. KG",
+    "firma": "KERN LIEBERS GmbH & Co. KG",
+    "mitarbeiter_zahl": 2810,
+    "mitarbeiter_basis": "DE_firma",
+    "status": "offen",
+    "notiz": "migriert aus Test_Struktur.xlsx",
     "url": "https://www.kern-liebers.com/karriere/offene-stellen/",
     "selectors": {
       "job_count_rows": "#jobOfferTable tbody tr"
     }
   },
   "KUMMER": {
-    "name": "Kummer GmbH & Co. KG",
+    "firma": "Kummer GmbH & Co. KG",
+    "mitarbeiter_zahl": 200,
+    "mitarbeiter_basis": "DE_firma",
+    "status": "offen",
+    "notiz": "migriert aus Test_Struktur.xlsx",
     "url": "https://www.kummer-gmbh.de/karriere.html#c875",
     "selectors": {
       "job_count_rows": "#c4621 .card-header h5"
     }
   },
   "alfred_ritter": {
-    "name": "Alfred Ritter GmbH & Co. KG",
+    "firma": "Alfred Ritter GmbH & Co. KG",
+    "mitarbeiter_zahl": 1900,
+    "mitarbeiter_basis": "DE_firma",
+    "status": "offen",
+    "notiz": "migriert aus Test_Struktur.xlsx",
     "parser": "sap_successfactors",
-    "jobs_api": "https://jobs.ritter-sport.com/services/recruiting/v1/jobs",
+    "url": "https://jobs.ritter-sport.com/services/recruiting/v1/jobs",
     "locale": "de_DE"
   },
   "mvz_aesculabor_karlsruhe": {
-    "name": "Bioscientia MVZ Labor Karlsruhe GmbH",
+    "firma": "Bioscientia MVZ Labor Karlsruhe GmbH",
     "url": "https://mvz-karlsruhe.career.softgarden.de/",
+    "mitarbeiter_zahl": 250,
+    "mitarbeiter_basis": "DE_firma",
+    "status": "offen",
+    "notiz": "migriert aus Test_Struktur.xlsx",
     "selectors": {
       "job_count": "h2[class*='JobList__Title']"
     },

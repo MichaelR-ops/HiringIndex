@@ -12,11 +12,10 @@ from .parser import (
     parse_sap_successfactors_job_count,
 )
 from .calculator import calculate_hiring_index
-from .config import load_company_config, get_company_parser_config
+from .config import load_company_config
 
 
 def process_companies(
-    companies_df: pd.DataFrame,
     config_path: str = "config/companies.json",
     parser_registry: Mapping[str, JobCountParser] | None = None
 ) -> pd.DataFrame:
@@ -24,7 +23,6 @@ def process_companies(
     Process all companies and calculate hiring indices.
     
     Args:
-        companies_df: DataFrame with company information
         config_path: Path to company configuration file
         parser_registry: Mapping of parser names to parser implementations
         
@@ -43,25 +41,19 @@ def process_companies(
         "sap_successfactors": parse_sap_successfactors_job_count
     }
     results: List[Dict[str, Any]] = []
-    
-    for _, row in companies_df.iterrows():
-        company_name = row["Unternehmen"]
-        career_url = row["Karriere-URL"]
-        employees = row["MA Weltweit"]
-        
-        # Skip empty rows
-        if pd.isna(company_name) or pd.isna(career_url):
+
+    for company_config in config.values():
+        company_name = company_config.get("firma")
+        career_url = company_config.get("url")
+        employees = company_config.get("mitarbeiter_zahl")
+
+        if not company_name or not career_url or employees is None:
+            print(f"Skipping incomplete company configuration: {company_name or '<unknown>'}")
             continue
-        
+
         print(f"Processing {company_name}...")
-        
+
         try:
-            # Get company-specific config
-            company_config = get_company_parser_config(company_name, config)
-            
-            if not company_config:
-                raise ValueError(f"No configuration found for {company_name}")
-            
             parser_name = company_config.get("parser", "html")
             parser = parsers.get(parser_name)
             if parser is None:

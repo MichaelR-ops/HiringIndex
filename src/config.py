@@ -26,23 +26,3 @@ def load_company_config(config_path: str) -> Dict[str, Dict[str, Any]]:
     
     with open(config_file, "r", encoding="utf-8") as f:
         return json.load(f)
-
-
-def get_company_parser_config(
-    company_name: str,
-    config: Dict[str, Dict[str, Any]]
-) -> Optional[Dict[str, Any]]:
-    """
-    Find and return configuration for a specific company.
-    
-    Args:
-        company_name: Name of the company to find
-        config: Loaded configuration dictionary
-        
-    Returns:
-        Company configuration dictionary or None if not found
-    """
-    for company_id, company_config in config.items():
-        if company_config.get("name") == company_name:
-            return company_config
-    return None
