@@ -4,23 +4,34 @@ import re
 import requests
 from typing import Any, Callable, Dict, Mapping
 from bs4 import BeautifulSoup
-from .fetcher import fetch_career_page
 
 
 JobCountParser = Callable[[str, Mapping[str, Any]], int]
 
 
-def parse_html_job_count(url: str, config: Mapping[str, Any]) -> int:
+def parse_html_job_count(config: Mapping[str, Any]) -> int:
     """Fetch an HTML career page and extract its configured job count."""
-    page_url = config.get("url", url)
+    page_url = config.get("url", None)
     if not isinstance(page_url, str) or not page_url:
         raise ValueError("HTML parser URL must be a non-empty string")
-    return extract_job_count(fetch_career_page(page_url), dict(config))
+    response = requests.get(
+        page_url,
+        headers={
+            "User-Agent": (
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36"
+            )
+        },
+        timeout=10,
+    )
+    response.raise_for_status()
+    page = BeautifulSoup(response.text, "html.parser")
+    return extract_job_count(page, dict(config))
 
 
-def parse_workday_job_count(url: str, config: Mapping[str, Any]) -> int:
+def parse_workday_job_count(config: Mapping[str, Any]) -> int:
     """Fetch a Workday jobs API and return its total job count."""
-    target_url = config.get("url", url)
+    target_url = config.get("url", None)
     if not isinstance(target_url, str) or not target_url:
         raise ValueError("No Workday URL configured")
     response = requests.post(
@@ -51,12 +62,9 @@ def parse_workday_job_count(url: str, config: Mapping[str, Any]) -> int:
     return total
 
 
-def parse_sap_successfactors_job_count(
-    url: str,
-    config: Mapping[str, Any]
-) -> int:
+def parse_sap_successfactors_job_count(config: Mapping[str, Any]) -> int:
     """Fetch a SAP SuccessFactors jobs API and return its total job count."""
-    target_url = config.get("url", url)
+    target_url = config.get("url", None)
     if not isinstance(target_url, str) or not target_url:
         raise ValueError("No SAP SuccessFactors URL configured")
     response = requests.post(

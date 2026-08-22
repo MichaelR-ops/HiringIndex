@@ -58,7 +58,7 @@ def process_companies(
             parser = parsers.get(parser_name)
             if parser is None:
                 raise ValueError(f"No parser registered for {parser_name}")
-            job_count = parser(career_url, company_config)
+            job_count = parser(company_config)
             print(f"  Jobs found: {job_count}")
             
             # Calculate hiring index

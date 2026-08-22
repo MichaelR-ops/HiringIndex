@@ -1,7 +1,6 @@
 """Test script for parser functionality with live career pages."""
 
-from src.fetcher import fetch_career_page
-from src.parser import extract_job_count, parse_workday_job_count
+from src.parser import parse_html_job_count
 from src.config import load_company_config, get_company_parser_config
 
 
@@ -14,8 +13,7 @@ def test_vw_parser() -> None:
         config = load_company_config("config/companies.json")
         vw_config = config["volkswagen_ag"]
         
-        soup = fetch_career_page(url)
-        job_count = extract_job_count(soup, vw_config)
+        job_count = parse_html_job_count({**vw_config, "url": url})
         print(f"  ✓ Successfully extracted {job_count} jobs from VW page")
         return True
     except Exception as e:
