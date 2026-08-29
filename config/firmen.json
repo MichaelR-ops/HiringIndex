@@ -1,0 +1,2075 @@
+{
+  "A. Raymond GmbH & Co. KG": {
+    "employees": 1412,
+    "industry": "Fahrzeugtechnik",
+    "headquarter": "Lörrach"
+  },
+  "ABB AG": {
+    "employees": 10500,
+    "industry": "Energie- und Automationstechnik",
+    "headquarter": "Mannheim",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://careers.abb/dach/de/home"
+  },
+  "ACPS Automotive GmbH": {
+    "employees": 2093,
+    "industry": "Automobilzulieferer",
+    "headquarter": "Ingersheim"
+  },
+  "ADK GmbH für Gesundheit und Soziales": {
+    "employees": 2250,
+    "industry": "Gesundheitsdienstleistungen",
+    "headquarter": "Ehingen (Donau)"
+  },
+  "ADM WILD Europe GmbH & Co. KG": {
+    "employees": 2000,
+    "industry": "Nahrungsmittelherstellung",
+    "headquarter": "Eppelheim"
+  },
+  "Aesculap AG - part of the B. Braun Group": {
+    "employees": 63000,
+    "industry": "Medizintechnik",
+    "headquarter": "Tuttlingen",
+    "career software": "Eigenes Portal (B. Braun Global Job Market)",
+    "career URL (corporate)": "https://jobs.bbraun.com/"
+  },
+  "Agilent Technologies Deutschland GmbH": {
+    "employees": 15500,
+    "industry": "Analytische Messtechnik",
+    "headquarter": "Waldbronn",
+    "career software": "Workday",
+    "career URL (corporate)": "https://careers.agilent.com/",
+    "career URL (code)": "https://agilent.wd5.myworkdayjobs.com/wday/cxs/agilent/Agilent_Careers/jobs"
+  },
+  "Akkodis Germany GmbH": {
+    "employees": 5700,
+    "industry": "Engineering- und Consultingdienstleistungen",
+    "headquarter": "Sindelfingen",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://karriere.akkodis.com/"
+  },
+  "ALB FILS KLINIKUM GmbH": {
+    "employees": 2485,
+    "industry": "Gesundheitswesen",
+    "headquarter": "Göppingen"
+  },
+  "Albert Ziegler GmbH": {
+    "employees": 1200,
+    "industry": "Sonderfahrzeugbau",
+    "headquarter": "Giengen"
+  },
+  "Alexander Bürkle GmbH & Co. KG": {
+    "employees": 1169,
+    "industry": "Elektrohandel / Technologie-Dienstleister",
+    "headquarter": "Freiburg im Breisgau"
+  },
+  "Alfred Kärcher SE & Co. KG": {
+    "employees": 16000,
+    "industry": "Maschinenbau, Reinigungstechnik",
+    "headquarter": "Winnenden",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://careers.kaercher.com/"
+  },
+  "Amann & Söhne GmbH & Co. KG": {
+    "employees": 2696,
+    "industry": "Textil",
+    "headquarter": "Bönnigheim"
+  },
+  "Amcor Flexibles Singen GmbH": {
+    "employees": 48000,
+    "industry": "Verpackung",
+    "headquarter": "Singen",
+    "career software": "Eigenes Portal (Konzernweit, Amcor)",
+    "career URL (corporate)": "https://www.amcor.com/careers"
+  },
+  "ANDREAS STIHL AG & Co. KG": {
+    "employees": 19805,
+    "industry": "Maschinenbau",
+    "headquarter": "Waiblingen",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://career.stihl.com/"
+  },
+  "Anton Häring KG": {
+    "employees": 4000,
+    "industry": "Präzisionsteile Automobilindustrie",
+    "headquarter": "Bubsheim"
+  },
+  "Aptar Radolfzell GmbH": {
+    "employees": 14000,
+    "industry": "Zerstäuber und Dosiersysteme",
+    "headquarter": "Radolfzell",
+    "career software": "Eigenes Portal (Konzernweit, AptarGroup)",
+    "career URL (corporate)": "https://jobs.aptar.com/"
+  },
+  "ARBURG GmbH + Co KG": {
+    "employees": 3700,
+    "industry": "Kunststoffindustrie, Maschinenbau",
+    "headquarter": "Loßburg"
+  },
+  "Atruvia AG": {
+    "employees": 5260,
+    "industry": "IT-Dienstleistung",
+    "headquarter": "Karlsruhe",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://karriere.atruvia.de/"
+  },
+  "AZO GmbH & Co. KG": {
+    "employees": 1067,
+    "industry": "Maschinen- und Anlagenbau",
+    "headquarter": "Osterburken"
+  },
+  "badenova AG & Co. KG": {
+    "employees": 1405,
+    "industry": "Versorgungsdienstleistungen",
+    "headquarter": "Freiburg im Breisgau"
+  },
+  "BALLUFF GmbH": {
+    "employees": 3900,
+    "industry": "Elektrotechnik/Sensorik",
+    "headquarter": "Neuhausen auf den Fildern"
+  },
+  "Bardusch GmbH & Co. KG": {
+    "employees": 2475,
+    "industry": "Textilmietdienste",
+    "headquarter": "Ettlingen"
+  },
+  "BAUHAUS AG - ZN Mannheim": {
+    "employees": 15227,
+    "industry": "Baumärkte",
+    "headquarter": "Belp (CH)",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://bewerben.bauhaus.info/"
+  },
+  "Bausch+Ströbel SE + Co. KG": {
+    "employees": 2850,
+    "industry": "Maschinenbau",
+    "headquarter": "Ilshofen"
+  },
+  "BBBank eG": {
+    "employees": 1328,
+    "industry": "Banken und Finanzdienstleistungen",
+    "headquarter": "Karlsruhe"
+  },
+  "Bechtle AG": {
+    "employees": 15306,
+    "industry": "Informationstechnologie",
+    "headquarter": "Neckarsulm",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://jobs.bechtle.com/"
+  },
+  "BERNER Group": {
+    "employees": 8000,
+    "industry": "B2B-Handelsunternehmen",
+    "headquarter": "Künzelsau",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.berner-group.com/karriere"
+  },
+  "Bertrandt AG": {
+    "employees": 14276,
+    "industry": "Ingenieurdienstleistungen",
+    "headquarter": "Ehningen",
+    "career software": "SAP SuccessFactors",
+    "career URL (corporate)": "https://www.bertrandt.com/karriere"
+  },
+  "Beurer GmbH": {
+    "employees": 1800,
+    "industry": "Gesundheit und Wohlbefinden",
+    "headquarter": "Ulm"
+  },
+  "Bilfinger SE": {
+    "employees": 30000,
+    "industry": "Industriedienstleistungen",
+    "headquarter": "Mannheim",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://jobs.bilfinger.com/"
+  },
+  "Biologische Heilmittel Heel GmbH": {
+    "employees": 1300,
+    "industry": "Pharma",
+    "headquarter": "Baden-Baden"
+  },
+  "Bizerba": {
+    "employees": 4100,
+    "industry": "Wiege- und Schneidetechnik",
+    "headquarter": "Balingen"
+  },
+  "Blanc & Fischer Familienholding SE & Co. KGaA": {
+    "employees": 7977,
+    "industry": "Küchentechnik",
+    "headquarter": "Oberderdingen"
+  },
+  "BLANCO GmbH + Co KG": {
+    "employees": 1500,
+    "industry": "Küchentechnik",
+    "headquarter": "Oberderdingen"
+  },
+  "Boehringer Ingelheim": {
+    "employees": 53500,
+    "industry": "Pharmazeutische Industrie",
+    "headquarter": "Biberach an der Riß",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://careers.boehringer-ingelheim.com/"
+  },
+  "Bosch Engineering GmbH": {
+    "employees": 3300,
+    "industry": "Technologie-/Dienstleistungsunternehmen",
+    "headquarter": "Abstatt"
+  },
+  "Boysen Gruppe": {
+    "employees": 5300,
+    "industry": "Fahrzeugtechnik",
+    "headquarter": "Altensteig",
+    "career software": "join.com",
+    "career URL (corporate)": "https://join.com/companies/boysen"
+  },
+  "Braun Möbel-Center GmbH & Co. KG": {
+    "employees": 1000,
+    "industry": "Möbelhandel",
+    "headquarter": "Reutlingen"
+  },
+  "Breer Gebäudedienste Heidelberg GmbH": {
+    "employees": 1672,
+    "industry": "Gebäudedienstleistungen",
+    "headquarter": "Heidelberg"
+  },
+  "Brucklacher Group": {
+    "employees": 4000,
+    "industry": "Präzisionswerkzeuge",
+    "headquarter": "Oberkochen"
+  },
+  "Bucher Hydraulics": {
+    "employees": 3000,
+    "industry": "Hydraulische Antriebstechnik",
+    "headquarter": "Klettgau"
+  },
+  "BÜRGER GmbH & Co. KG": {
+    "employees": 1200,
+    "industry": "Lebensmittelindustrie",
+    "headquarter": "Ditzingen"
+  },
+  "Bürkert Fluid Control Systems": {
+    "employees": 3700,
+    "industry": "Mess-, Steuer- und Regelungstechnik",
+    "headquarter": "Ingelfingen"
+  },
+  "C.E. Noerpel GmbH": {
+    "employees": 1850,
+    "industry": "Spedition, Transport, Logistik",
+    "headquarter": "Ulm"
+  },
+  "Carl Stahl Holding GmbH": {
+    "employees": 1800,
+    "industry": "Seil- und Hebetechnik",
+    "headquarter": "Süßen"
+  },
+  "CeramTec GmbH": {
+    "employees": 3800,
+    "industry": "Technische Keramik",
+    "headquarter": "Plochingen"
+  },
+  "CGI Deutschland B.V. & Co. KG": {
+    "employees": 90000,
+    "industry": "IT-Dienstleistungen und Beratung",
+    "headquarter": "Leinfelden-Echterdingen",
+    "career software": "Njoyn",
+    "career URL (corporate)": "https://www.cgi.com/de/de/karriere"
+  },
+  "Chemoform AG": {
+    "employees": 1200,
+    "industry": "Wellness und Fitness",
+    "headquarter": "Wendlingen am Neckar"
+  },
+  "CHIRON Group SE": {
+    "employees": 1900,
+    "industry": "Maschinen- und Anlagenbau",
+    "headquarter": "Tuttlingen"
+  },
+  "Christophsbad GmbH & Co. Fachkrankenhaus KG": {
+    "employees": 1700,
+    "industry": "Dienstleistungen",
+    "headquarter": "Göppingen"
+  },
+  "CHT Germany GmbH": {
+    "employees": 2501,
+    "industry": "Chemie",
+    "headquarter": "Tübingen"
+  },
+  "compassio Gruppe": {
+    "employees": 8450,
+    "industry": "Gesundheitswesen",
+    "headquarter": "Ulm",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://karriere.compassio.de/"
+  },
+  "Conductix-Wampfler GmbH": {
+    "employees": 1100,
+    "industry": "Energieversorgung/Datenübertragung",
+    "headquarter": "Weil am Rhein"
+  },
+  "confern Möbeltransportbetriebe GmbH": {
+    "employees": 1900,
+    "industry": "Spedition",
+    "headquarter": "Mannheim"
+  },
+  "Constellium Singen GmbH": {
+    "employees": 2500,
+    "industry": "Metallverarbeitung",
+    "headquarter": "Singen"
+  },
+  "Continental Aktiengesellschaft": {
+    "employees": 200000,
+    "industry": "Automobilzulieferer",
+    "headquarter": "Hannover",
+    "career software": "SmartRecruiters",
+    "career URL (corporate)": "https://jobs.continental.com/de/",
+    "career URL (code)": "https://api.smartrecruiters.com/v1/companies/continental/postings"
+  },
+  "CRONIMET Holding GmbH": {
+    "employees": 1709,
+    "industry": "Recycling, Metalle",
+    "headquarter": "Karlsruhe"
+  },
+  "Daimler Buses GmbH": {
+    "employees": 15480,
+    "industry": "Nutzfahrzeug-Hersteller",
+    "headquarter": "Leinfelden-Echterdingen",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://solutions.buses.daimlertruck.com/karriere"
+  },
+  "Daimler Truck AG": {
+    "employees": 104400,
+    "industry": "Nutzfahrzeug-Hersteller",
+    "headquarter": "Leinfelden-Echterdingen",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.daimlertruck.com/karriere"
+  },
+  "DATAGROUP": {
+    "employees": 3500,
+    "industry": "IT-Dienstleistungen",
+    "headquarter": "Pliezhausen"
+  },
+  "DEKRA": {
+    "employees": 48833,
+    "industry": "Technische Dienstleistungen",
+    "headquarter": "Stuttgart",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://jobs.dekra.com/"
+  },
+  "Deutsche Bahn AG": {
+    "employees": 340100,
+    "industry": "Verkehrswirtschaft",
+    "headquarter": "Berlin",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://db.jobs/de-de"
+  },
+  "Deutsche Bausparkasse Badenia AG": {
+    "employees": 442,
+    "industry": "Bausparkasse",
+    "headquarter": "Karlsruhe"
+  },
+  "Diakonie in Baden-Württemberg": {
+    "employees": 90000,
+    "industry": "Wohlfahrtspflege",
+    "headquarter": "Stuttgart"
+  },
+  "DIEFFENBACHER GmbH": {
+    "employees": 1850,
+    "industry": "Maschinen- und Anlagenbau",
+    "headquarter": "Eppingen"
+  },
+  "Diehl Aviation Laupheim GmbH": {
+    "employees": 2600,
+    "industry": "Luft- und Raumfahrzeugbau",
+    "headquarter": "Laupheim"
+  },
+  "DIRINGER & SCHEIDEL Unternehmensgruppe": {
+    "employees": 4200,
+    "industry": "Baugewerbe, Immobilien",
+    "headquarter": "Mannheim",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.dus-karriere.de/"
+  },
+  "dm-drogerie markt GmbH + Co. KG": {
+    "employees": 51359,
+    "industry": "Drogerieeinzelhandel",
+    "headquarter": "Karlsruhe",
+    "career software": "SAP SuccessFactors",
+    "career URL (corporate)": "https://www.dm-jobs.de/"
+  },
+  "Dr. Ing. h.c. F. Porsche AG": {
+    "employees": 41000,
+    "industry": "Automobilhersteller",
+    "headquarter": "Stuttgart",
+    "career software": "Eigenes Career-Portal",
+    "career URL (corporate)": "https://jobs.porsche.com/"
+  },
+  "Drees & Sommer SE": {
+    "employees": 6042,
+    "industry": "Beratung, Planung, Projektmanagement",
+    "headquarter": "Stuttgart",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://career.dreso.com/de/"
+  },
+  "DSV-Gruppe (Deutscher Sparkassenverlag)": {
+    "employees": 2560,
+    "industry": "Dienstleistung",
+    "headquarter": "Stuttgart"
+  },
+  "Dunkermotoren GmbH": {
+    "employees": 1250,
+    "industry": "Antriebstechnologie",
+    "headquarter": "Bonndorf"
+  },
+  "Duravit AG": {
+    "employees": 7239,
+    "industry": "Sanitärprodukte",
+    "headquarter": "Hornberg",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://jobs.duravit.de/eng"
+  },
+  "Dürr Aktiengesellschaft": {
+    "employees": 20500,
+    "industry": "Maschinen- und Anlagenbau",
+    "headquarter": "Stuttgart",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.durr-group.com/de/karriere"
+  },
+  "Dussmann Service Deutschland GmbH": {
+    "employees": 32700,
+    "industry": "Dienstleistungen",
+    "headquarter": "Berlin",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://de.dussmanngroup.com/karriere"
+  },
+  "E. Breuninger GmbH & Co.": {
+    "employees": 6500,
+    "industry": "Einzelhandel",
+    "headquarter": "Stuttgart",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.e-breuninger.de/de/karriere/stellenangebote/"
+  },
+  "Eberspächer Gruppe GmbH & Co. KG": {
+    "employees": 11171,
+    "industry": "Automobilzulieferer",
+    "headquarter": "Esslingen am Neckar",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.eberspaecher-career.com/"
+  },
+  "ebm-papst Gruppe": {
+    "employees": 13800,
+    "industry": "Ventilatoren und Motoren",
+    "headquarter": "Mulfingen",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://karriere.de.ebmpapst.com/"
+  },
+  "Ebner Stolz": {
+    "employees": 3400,
+    "industry": "Wirtschaftsprüfung/Steuerberatung",
+    "headquarter": "Stuttgart"
+  },
+  "Ed. Züblin AG": {
+    "employees": 15112,
+    "industry": "Bauwirtschaft",
+    "headquarter": "Stuttgart",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.zueblin.de/jobs-karriere"
+  },
+  "EDEKA Südwest e.G.": {
+    "employees": 47000,
+    "industry": "Großhandel, Einzelhandel",
+    "headquarter": "Offenburg",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://karriere-edeka.de/"
+  },
+  "Edelmann Group": {
+    "employees": 3000,
+    "industry": "Verpackungslösungen",
+    "headquarter": "Heidenheim/Brenz"
+  },
+  "ElringKlinger AG": {
+    "employees": 9600,
+    "industry": "Automobilzulieferer",
+    "headquarter": "Dettingen an der Erms",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://elringklinger.de/karriere"
+  },
+  "EMAG GmbH & Co. KG": {
+    "employees": 2500,
+    "industry": "Maschinenbau",
+    "headquarter": "Salach"
+  },
+  "EnBW Energie Baden-Württemberg AG": {
+    "employees": 30364,
+    "industry": "Energiewirtschaft",
+    "headquarter": "Karlsruhe",
+    "career URL (corporate)": "https://www.enbw.com/karriere/"
+  },
+  "Endress + Hauser SE + Co. KG": {
+    "employees": 2807,
+    "industry": "Prozessautomatisierung",
+    "headquarter": "Maulburg"
+  },
+  "Engelhorn GmbH & Co. KGaA": {
+    "employees": 1150,
+    "industry": "Einzelhandel",
+    "headquarter": "Mannheim"
+  },
+  "Ensinger GmbH": {
+    "employees": 2700,
+    "industry": "Kunststoffverarbeitung",
+    "headquarter": "Nufringen"
+  },
+  "Erbe Elektromedizin GmbH": {
+    "employees": 2000,
+    "industry": "Medizintechnik",
+    "headquarter": "Tübingen"
+  },
+  "Ernst Klett AG/Klett Gruppe": {
+    "employees": 10806,
+    "industry": "Bildungsbranche",
+    "headquarter": "Stuttgart",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.klett-gruppe.de/karriere/"
+  },
+  "Erwin Hymer Group SE": {
+    "employees": 8900,
+    "industry": "Reisemobilbranche",
+    "headquarter": "Bad Waldsee",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.erwinhymergroup.com/karriere"
+  },
+  "Essity": {
+    "employees": 36000,
+    "industry": "Hygiene- und Gesundheitsprodukte",
+    "headquarter": "Mannheim",
+    "career software": "Workday",
+    "career URL (corporate)": "https://www.essity.com/careers/",
+    "career URL (code)": "https://essity.wd3.myworkdayjobs.com/wday/cxs/essity/Job_opportunities/jobs"
+  },
+  "ETO GRUPPE TECHNOLOGIES GmbH": {
+    "employees": 2509,
+    "industry": "Industrieelektronik",
+    "headquarter": "Stockach"
+  },
+  "Eugen Kieffer Gebäudereinigung GmbH & Co. KG": {
+    "employees": 2040,
+    "industry": "Gebäudereinigung",
+    "headquarter": "Steinheim am Albuch"
+  },
+  "EURONICS Deutschland eG": {
+    "industry": "Elektrohaushaltsgeräte-Großhandel",
+    "headquarter": "Ditzingen"
+  },
+  "Europa-Park Erlebnis-Resort": {
+    "employees": 5000,
+    "industry": "Tourismus- und Freizeitbranche",
+    "headquarter": "Rust",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://jobs.europapark.de/"
+  },
+  "Exyte AG": {
+    "employees": 9700,
+    "industry": "Anlagenbau",
+    "headquarter": "Stuttgart",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://careers.exyte.net/global/de/home"
+  },
+  "EY GmbH & Co. KG": {
+    "employees": 10600,
+    "industry": "Steuerberater, Wirtschaftsprüfer",
+    "headquarter": "Stuttgart",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://jobsgermany.ey.com/"
+  },
+  "Faulhaber Gruppe": {
+    "employees": 2300,
+    "industry": "Antriebs-/Mikrosystemtechnik",
+    "headquarter": "Schönaich"
+  },
+  "FESTO SE & Co. KG": {
+    "employees": 20200,
+    "industry": "Automatisierungstechnik",
+    "headquarter": "Esslingen am Neckar",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://jobs.festo.com/"
+  },
+  "FICHTNER-Gruppe": {
+    "employees": 2235,
+    "industry": "Ingenieur- und Beratungsdienstleistungen",
+    "headquarter": "Stuttgart"
+  },
+  "Firmengruppe Liebherr": {
+    "employees": 50000,
+    "industry": "Maschinenbau, Elektrotechnik",
+    "headquarter": "Bulle (CH)",
+    "career software": "Eigenes Portal (YourLiebherrCareer)",
+    "career URL (corporate)": "https://careers.liebherr.com/"
+  },
+  "Flughafen Stuttgart GmbH": {
+    "employees": 2404,
+    "industry": "Verkehrswirtschaft",
+    "headquarter": "Leinfelden-Echterdingen"
+  },
+  "FONDIUM Singen GmbH": {
+    "employees": 1800,
+    "industry": "Automobilzulieferer",
+    "headquarter": "Singen"
+  },
+  "Franz & Wach Personalservice GmbH": {
+    "employees": 1600,
+    "industry": "Personaldienstleister",
+    "headquarter": "Crailsheim"
+  },
+  "Franz Binder GmbH & Co. KG": {
+    "employees": 1800,
+    "industry": "Rundsteckverbinder",
+    "headquarter": "Neckarsulm"
+  },
+  "Freudenberg Gruppe": {
+    "employees": 52000,
+    "industry": "Technologiekonzern",
+    "headquarter": "Weinheim",
+    "career software": "Workday",
+    "career URL (corporate)": "https://jobs.freudenberg.com/"
+  },
+  "Friedrich Scharr KG": {
+    "employees": 1000,
+    "industry": "Großhandel",
+    "headquarter": "Stuttgart"
+  },
+  "FUCHS SE": {
+    "employees": 6272,
+    "industry": "Schmierstoffe",
+    "headquarter": "Mannheim",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.fuchs.com/de/de/karriere/"
+  },
+  "G.RAU Group": {
+    "employees": 1991,
+    "industry": "Metallverarbeitung",
+    "headquarter": "Pforzheim"
+  },
+  "GARDENA GmbH (Husqvarna Group)": {
+    "employees": 13800,
+    "industry": "Gartengeräte",
+    "headquarter": "Ulm",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://karriere.husqvarnagroup.de/"
+  },
+  "Geberit": {
+    "employees": 12000,
+    "industry": "Sanitärprodukte",
+    "headquarter": "Jona (CH) / Pfullendorf",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://jobs.geberit.com/"
+  },
+  "Gebr. Heller Maschinenfabrik GmbH": {
+    "employees": 2600,
+    "industry": "Maschinenbau",
+    "headquarter": "Nürtingen"
+  },
+  "Gebr. Lotter KG": {
+    "employees": 1900,
+    "industry": "Großhandel",
+    "headquarter": "Ludwigsburg"
+  },
+  "GELITA AG": {
+    "employees": 2800,
+    "industry": "Nahrungsmittelherstellung",
+    "headquarter": "Eberbach"
+  },
+  "GEMÜ Gebr. Müller Apparatebau GmbH & Co. KG": {
+    "employees": 2500,
+    "industry": "Ventil-/Mess-/Regelsysteme",
+    "headquarter": "Ingelfingen-Criesbach"
+  },
+  "Gerhard Schubert GmbH": {
+    "employees": 1716,
+    "industry": "Verpackungsmaschinen",
+    "headquarter": "Crailsheim"
+  },
+  "Gesundheitsholding Tauberfranken GmbH": {
+    "employees": 2150,
+    "industry": "Gesundheitswesen",
+    "headquarter": "Bad Mergentheim"
+  },
+  "Getinge": {
+    "employees": 12000,
+    "industry": "Medizintechnik",
+    "headquarter": "Rastatt"
+  },
+  "GEZE GmbH": {
+    "employees": 3500,
+    "industry": "Bauelementebranche",
+    "headquarter": "Leonberg"
+  },
+  "GFT Technologies SE": {
+    "employees": 7700,
+    "industry": "IT-Dienstleistungen",
+    "headquarter": "Stuttgart",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.gft.com/de/de/about-us/career/"
+  },
+  "grenke AG": {
+    "employees": 2347,
+    "industry": "Finanzdienstleistungen",
+    "headquarter": "Baden-Baden"
+  },
+  "Gretsch-Unitas GmbH": {
+    "employees": 4290,
+    "industry": "Metallverarbeitende Industrie",
+    "headquarter": "Ditzingen",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://karriere.gu-gruppe.de/"
+  },
+  "groninger & co gmbh": {
+    "employees": 1600,
+    "industry": "Sondermaschinenbau",
+    "headquarter": "Crailsheim"
+  },
+  "Groupe SEB WMF Shared Services GmbH": {
+    "employees": 1500,
+    "industry": "Metallwarenindustrie",
+    "headquarter": "Geislingen an der Steige"
+  },
+  "Groz-Beckert": {
+    "employees": 9595,
+    "industry": "Textilwerkzeuge",
+    "headquarter": "Albstadt Ebingen",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.groz-beckert.com/de/karriere/"
+  },
+  "Gühring KG": {
+    "employees": 8000,
+    "industry": "Metallzerspanung",
+    "headquarter": "Albstadt",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://guehring.com/ueber-uns/karriere/"
+  },
+  "Häfele SE": {
+    "employees": 8000,
+    "industry": "Beschlagtechnik",
+    "headquarter": "Nagold",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.hafele.com.de/de/info/ueber-haefele/karriere/385/"
+  },
+  "HALLESCHE Krankenversicherung a.G.": {
+    "employees": 1100,
+    "industry": "Versicherung",
+    "headquarter": "Stuttgart"
+  },
+  "Handtmann Unternehmensgruppe": {
+    "employees": 4300,
+    "industry": "Gießereien, Automobilzulieferer",
+    "headquarter": "Biberach",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.handtmann.de/karriere/"
+  },
+  "Hansgrohe SE": {
+    "employees": 5448,
+    "industry": "Sanitärprodukte",
+    "headquarter": "Schiltach",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.hansgrohe-group.com/de/karriere"
+  },
+  "Harro Höfliger Verpackungsmaschinen GmbH": {
+    "employees": 2100,
+    "industry": "Maschinenbau",
+    "headquarter": "Allmersbach im Tal"
+  },
+  "Hartmetall-Werkzeugfabrik Paul Horn GmbH": {
+    "employees": 950,
+    "industry": "Präzisionswerkzeuge",
+    "headquarter": "Tübingen"
+  },
+  "Haufe Group SE": {
+    "employees": 2500,
+    "industry": "Software, Medien",
+    "headquarter": "Freiburg im Breisgau"
+  },
+  "Heidelberg Materials AG": {
+    "employees": 51000,
+    "industry": "Baustoffindustrie",
+    "headquarter": "Heidelberg",
+    "career software": "Workday",
+    "career URL (corporate)": "https://karriere.heidelbergmaterials.com/",
+    "career URL (code)": "https://heidelbergmaterials.wd3.myworkdayjobs.com/wday/cxs/heidelbergmaterials/de-DE/Global_HM_Career_Site/jobs"
+  },
+  "HELIOS Klinikum Pforzheim": {
+    "employees": 1300,
+    "industry": "Gesundheitswesen",
+    "headquarter": "Pforzheim"
+  },
+  "HELUKABEL GmbH": {
+    "employees": 2500,
+    "industry": "Elektrische Verbindungstechnik",
+    "headquarter": "Hemmingen"
+  },
+  "HERMA GmbH": {
+    "employees": 1100,
+    "industry": "Etiketten und Etikettiermaschinen",
+    "headquarter": "Filderstadt"
+  },
+  "Herrenknecht AG": {
+    "employees": 5328,
+    "industry": "Tunnelbohrmaschinen",
+    "headquarter": "Schwanau",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://jobs.herrenknecht.com/"
+  },
+  "HES Präzisionsteile Hermann Erkert GmbH": {
+    "employees": 1055,
+    "industry": "Automobilzulieferer",
+    "headquarter": "Sulzbach/Murr"
+  },
+  "Hofmann Menü-Manufaktur GmbH": {
+    "employees": 1200,
+    "industry": "Tiefkühlmenüs",
+    "headquarter": "Boxberg"
+  },
+  "Hofmeister Wohnzentren": {
+    "employees": 1000,
+    "industry": "Möbeleinzelhandel",
+    "headquarter": "Bietigheim-Bissingen"
+  },
+  "Hohenstein Group": {
+    "employees": 1250,
+    "industry": "Prüfdienstleistungen",
+    "headquarter": "Bönnigheim"
+  },
+  "HOMAG Group AG": {
+    "employees": 7348,
+    "industry": "Holzbearbeitungsmaschinenbau",
+    "headquarter": "Schopfloch",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.homag.com/karriere"
+  },
+  "HP Deutschland GmbH": {
+    "industry": "Informationstechnologie",
+    "headquarter": "Böblingen"
+  },
+  "Hubert Burda Media Holding KG": {
+    "employees": 10000,
+    "industry": "Medien, Verlagswesen",
+    "headquarter": "Offenburg",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.burda.com/en/career"
+  },
+  "HUGO BOSS AG": {
+    "employees": 19000,
+    "industry": "Bekleidung",
+    "headquarter": "Metzingen",
+    "career software": "Eigenes Portal (Phenom/careers.hugoboss.com)",
+    "career URL (corporate)": "https://careers.hugoboss.com/de/de/home"
+  },
+  "Hugo Kern und Liebers GmbH & Co. KG": {
+    "employees": 7000,
+    "industry": "Metallverarbeitung",
+    "headquarter": "Schramberg"
+  },
+  "IBM Corporation": {
+    "employees": 282000,
+    "industry": "Informationstechnologie",
+    "headquarter": "Armonk (USA) / Ehningen",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.ibm.com/de-de/careers"
+  },
+  "IMPACT GmbH": {
+    "employees": 2100,
+    "industry": "Arbeitnehmerüberlassung",
+    "headquarter": "Mannheim"
+  },
+  "IMS Gear SE & Co. KGaA": {
+    "employees": 3200,
+    "industry": "Automobilzulieferer",
+    "headquarter": "Donaueschingen"
+  },
+  "Index-Werke GmbH & Co. KG": {
+    "employees": 2100,
+    "industry": "Maschinenbau",
+    "headquarter": "Esslingen am Neckar"
+  },
+  "INTER Krankenversicherung AG": {
+    "employees": 1699,
+    "industry": "Versicherungen",
+    "headquarter": "Mannheim"
+  },
+  "INTERSPORT Deutschland eG": {
+    "employees": 400,
+    "industry": "Sportfachhandel",
+    "headquarter": "Heilbronn"
+  },
+  "John Deere GmbH & Co. KG": {
+    "employees": 7770,
+    "industry": "Landmaschinenbau",
+    "headquarter": "Mannheim",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.deere.de/de-de/unser-unternehmen/karriere"
+  },
+  "KACO GmbH+Co.KG": {
+    "employees": 2000,
+    "industry": "Automobilzulieferer",
+    "headquarter": "Kirchardt"
+  },
+  "Karl Marbach GmbH & Co. KG": {
+    "employees": 1600,
+    "industry": "Verpackungstechnik",
+    "headquarter": "Heilbronn"
+  },
+  "KARL STORZ SE & Co. KG": {
+    "employees": 9400,
+    "industry": "Medizintechnik",
+    "headquarter": "Tuttlingen",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://career.karlstorz.com/stellenangebote.html"
+  },
+  "KaVo Dental GmbH": {
+    "employees": 1600,
+    "industry": "Medizintechnik",
+    "headquarter": "Biberach"
+  },
+  "Kemmler Baustoffe GmbH": {
+    "employees": 1200,
+    "industry": "Baugroßhandel",
+    "headquarter": "Tübingen"
+  },
+  "KION Warehouse Systems GmbH": {
+    "employees": 42000,
+    "industry": "Lagertechnik",
+    "headquarter": "Reutlingen",
+    "career software": "Workday",
+    "career URL (corporate)": "https://www.kiongroup.com/de/Karriere/Arbeiten-bei-KION/",
+    "career URL (code)": "https://kiongroup.wd3.myworkdayjobs.com/wday/cxs/kiongroup/KIONGroup/jobs"
+  },
+  "Kleeblatt Pflegeheime gGmbH": {
+    "employees": 1100,
+    "industry": "Gesundheits- und Sozialwesen",
+    "headquarter": "Ludwigsburg"
+  },
+  "Kliniken des Landkreises Lörrach GmbH": {
+    "employees": 2199,
+    "industry": "Gesundheitswesen",
+    "headquarter": "Lörrach"
+  },
+  "Klinikum am Weissenhof": {
+    "employees": 1750,
+    "industry": "Gesundheitswesen",
+    "headquarter": "Weinsberg"
+  },
+  "Klinikum Esslingen GmbH": {
+    "employees": 1910,
+    "industry": "Gesundheitswesen",
+    "headquarter": "Esslingen am Neckar"
+  },
+  "Klinikum Mittelbaden gGmbH": {
+    "employees": 3500,
+    "industry": "Gesundheitswesen",
+    "headquarter": "Baden-Baden"
+  },
+  "Klinikverbund Südwest GmbH": {
+    "employees": 6000,
+    "industry": "Gesundheitswesen",
+    "headquarter": "Sindelfingen",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.klinikverbund-suedwest.de/jobs-karriere/"
+  },
+  "Koehler Paper SE": {
+    "employees": 2500,
+    "industry": "Papierherstellung",
+    "headquarter": "Oberkirch"
+  },
+  "Kreiskliniken Reutlingen gGmbH": {
+    "employees": 2500,
+    "industry": "Gesundheitswesen",
+    "headquarter": "Reutlingen"
+  },
+  "Kreissparkasse Biberach": {
+    "employees": 890,
+    "industry": "Kreditwirtschaft",
+    "headquarter": "Biberach an der Riß"
+  },
+  "Kreissparkasse Böblingen": {
+    "employees": 1167,
+    "industry": "Kreditwirtschaft",
+    "headquarter": "Böblingen"
+  },
+  "Kreissparkasse Esslingen-Nürtingen": {
+    "employees": 1386,
+    "industry": "Kreditwirtschaft",
+    "headquarter": "Esslingen am Neckar"
+  },
+  "Kreissparkasse Göppingen": {
+    "employees": 1080,
+    "industry": "Kreditwirtschaft",
+    "headquarter": "Göppingen"
+  },
+  "Kreissparkasse Heilbronn": {
+    "employees": 1642,
+    "industry": "Kreditwirtschaft",
+    "headquarter": "Heilbronn"
+  },
+  "Kreissparkasse Ludwigsburg": {
+    "employees": 1397,
+    "industry": "Kreditwirtschaft",
+    "headquarter": "Ludwigsburg"
+  },
+  "Kreissparkasse Ostalb": {
+    "employees": 891,
+    "industry": "Kreditwirtschaft",
+    "headquarter": "Aalen"
+  },
+  "Kreissparkasse Ravensburg": {
+    "employees": 700,
+    "industry": "Kreditwirtschaft",
+    "headquarter": "Ravensburg"
+  },
+  "Kreissparkasse Reutlingen": {
+    "employees": 842,
+    "industry": "Kreditwirtschaft",
+    "headquarter": "Reutlingen"
+  },
+  "Kreissparkasse Tübingen": {
+    "employees": 857,
+    "industry": "Kreditwirtschaft",
+    "headquarter": "Tübingen"
+  },
+  "Kreissparkasse Waiblingen": {
+    "employees": 1282,
+    "industry": "Kreditwirtschaft",
+    "headquarter": "Waiblingen"
+  },
+  "Lapp Holding AG": {
+    "employees": 4245,
+    "industry": "Elektrotechnik",
+    "headquarter": "Stuttgart",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.lapp.com/de/de/unternehmen/karriere/e/000013"
+  },
+  "LÄPPLE AG": {
+    "employees": 2100,
+    "industry": "Umformtechnik",
+    "headquarter": "Heilbronn"
+  },
+  "LBBW": {
+    "employees": 10000,
+    "industry": "Kreditwirtschaft",
+    "headquarter": "Stuttgart",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.lbbw.de/menschen/karriere/karriere-bei-der-lbbw/karriere_7wo376iug_d.html"
+  },
+  "LBS Landesbausparkasse Süd": {
+    "employees": 1510,
+    "industry": "Kreditwirtschaft",
+    "headquarter": "Stuttgart"
+  },
+  "LEONHARD WEISS GmbH & Co. KG": {
+    "employees": 6269,
+    "industry": "Bauwirtschaft",
+    "headquarter": "Göppingen"
+  },
+  "Leuze electronic GmbH + Co. KG": {
+    "employees": 1670,
+    "industry": "Industriesensorik",
+    "headquarter": "Owen"
+  },
+  "LGI Logistics Group International GmbH": {
+    "employees": 5000,
+    "industry": "Logistik",
+    "headquarter": "Böblingen",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://lgigroup.com/de-de/karriere/stellenangebote/"
+  },
+  "LIQUI MOLY GmbH": {
+    "employees": 1150,
+    "industry": "Mineralölverarbeitung",
+    "headquarter": "Ulm"
+  },
+  "Magirus GmbH": {
+    "employees": 1400,
+    "industry": "Fahrzeugbau",
+    "headquarter": "Ulm"
+  },
+  "MAHLE GmbH": {
+    "employees": 72373,
+    "industry": "Automobilzulieferer",
+    "headquarter": "Stuttgart",
+    "career software": "SAP SuccessFactors",
+    "career URL (corporate)": "https://www.jobs.mahle.com/germany/de/"
+  },
+  "MANN+HUMMEL Gruppe": {
+    "employees": 22015,
+    "industry": "Filtration",
+    "headquarter": "Ludwigsburg",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.mann-hummel.com/de/karriere.html"
+  },
+  "Mannheimer Versicherung AG": {
+    "employees": 682,
+    "industry": "Versicherung",
+    "headquarter": "Mannheim"
+  },
+  "Manz AG": {
+    "employees": 1200,
+    "industry": "Maschinenbau",
+    "headquarter": "Reutlingen"
+  },
+  "MAPAL Fabrik für Präzisionswerkzeuge": {
+    "employees": 1650,
+    "industry": "Werkzeugmaschinenbau",
+    "headquarter": "Aalen"
+  },
+  "Marelli Germany GmbH": {
+    "employees": 19000,
+    "industry": "Automobilzulieferer",
+    "headquarter": "Reutlingen",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://jobs.marelli.com/?locale=de_DE"
+  },
+  "Marquardt": {
+    "employees": 10000,
+    "industry": "Metall- und Elektroindustrie",
+    "headquarter": "Rietheim-Weilheim",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.marquardt.com/de/karriere/standorte/deutschland"
+  },
+  "Maschinenfabrik ALFING Kessler GmbH": {
+    "employees": 1200,
+    "industry": "Kurbelwellen",
+    "headquarter": "Aalen-Wasseralfingen"
+  },
+  "Maschinenfabrik Berthold Hermle AG": {
+    "employees": 1500,
+    "industry": "Werkzeugmaschinenbau",
+    "headquarter": "Gosheim"
+  },
+  "MEIKO Maschinenbau GmbH & Co. KG": {
+    "employees": 1000,
+    "industry": "Maschinenbau",
+    "headquarter": "Offenburg"
+  },
+  "Mercedes-AMG GmbH": {
+    "employees": 2600,
+    "industry": "Fahrzeugbau",
+    "headquarter": "Affalterbach"
+  },
+  "Mercedes-Benz Bank AG": {
+    "industry": "Kreditwirtschaft",
+    "headquarter": "Stuttgart"
+  },
+  "Mercedes-Benz Group AG": {
+    "employees": 166000,
+    "industry": "Automobilhersteller",
+    "headquarter": "Stuttgart",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://jobs.mercedes-benz.com/"
+  },
+  "Metabowerke GmbH": {
+    "employees": 2000,
+    "industry": "Elektrowerkzeuge",
+    "headquarter": "Nürtingen"
+  },
+  "MHP Management- und IT-Beratung GmbH": {
+    "employees": 5200,
+    "industry": "Management- und IT-Beratung",
+    "headquarter": "Ludwigsburg",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://jobs.mhp.com/"
+  },
+  "MHZ Hachtel GmbH & Co. KG": {
+    "employees": 1600,
+    "industry": "Blend- und Sonnenschutz",
+    "headquarter": "Leinfelden-Echterdingen"
+  },
+  "Michael Weinig AG": {
+    "employees": 2483,
+    "industry": "Holzbearbeitungsmaschinen",
+    "headquarter": "Tauberbischofsheim"
+  },
+  "Michelin Gruppe": {
+    "employees": 132500,
+    "industry": "Reifenhersteller",
+    "headquarter": "Clermont-Ferrand (F) / Karlsruhe",
+    "career software": "Workday",
+    "career URL (corporate)": "https://jobs.michelin.de/",
+    "career URL (code)": "https://michelinhr.wd3.myworkdayjobs.com/wday/cxs/michelinhr/Michelin/jobs"
+  },
+  "MiRO Mineraloelraffinerie Oberrhein GmbH & Co. KG": {
+    "employees": 1151,
+    "industry": "Rohölverarbeitung",
+    "headquarter": "Karlsruhe"
+  },
+  "MLP SE": {
+    "employees": 2663,
+    "industry": "Finanzdienstleistungen",
+    "headquarter": "Wiesloch"
+  },
+  "Mosca GmbH": {
+    "employees": 1350,
+    "industry": "Maschinenbau",
+    "headquarter": "Waldbrunn"
+  },
+  "MOSOLF SE & Co. KG": {
+    "employees": 3200,
+    "industry": "Automobilindustrie",
+    "headquarter": "Kirchheim unter Teck"
+  },
+  "Müller - Die lila Logistik SE": {
+    "employees": 2300,
+    "industry": "Logistik",
+    "headquarter": "Besigheim"
+  },
+  "Müller Holding GmbH & Co.KG": {
+    "employees": 35600,
+    "industry": "Drogerieeinzelhandel",
+    "headquarter": "Ulm"
+  },
+  "Murrelektronik GmbH": {
+    "employees": 3200,
+    "industry": "Automatisierungstechnik",
+    "headquarter": "Oppenweiler"
+  },
+  "MVV Energie AG": {
+    "employees": 6390,
+    "industry": "Energie- und Wasserversorgung",
+    "headquarter": "Mannheim",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.mvv.de/karriere"
+  },
+  "Neff GmbH": {
+    "employees": 1250,
+    "industry": "Haushaltsgeräte",
+    "headquarter": "Bretten"
+  },
+  "Neue Pressegesellschaft mbH & Co. KG": {
+    "employees": 9500,
+    "industry": "Verlage",
+    "headquarter": "Ulm"
+  },
+  "Nokia (Nokia Solutions and Networks)": {
+    "employees": 86000,
+    "industry": "Nachrichtentechnik",
+    "headquarter": "Espoo/Ulm",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://jobs.nokia.com/"
+  },
+  "Oberschwabenklinik gGmbH": {
+    "employees": 2818,
+    "industry": "Gesundheitswesen",
+    "headquarter": "Ravensburg"
+  },
+  "OPTIMA packaging group GmbH": {
+    "employees": 3150,
+    "industry": "Sondermaschinenbau",
+    "headquarter": "Schwäbisch Hall"
+  },
+  "Papierfabrik Palm": {
+    "employees": 4300,
+    "industry": "Papierherstellung",
+    "headquarter": "Aalen"
+  },
+  "Paul Hartmann AG": {
+    "employees": 10168,
+    "industry": "Medizin-/Hygieneprodukte",
+    "headquarter": "Heidenheim",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://careers.hartmann.info/"
+  },
+  "Paulinenpflege Winnenden e. V.": {
+    "employees": 1645,
+    "industry": "Soziale Unternehmen",
+    "headquarter": "Winnenden"
+  },
+  "pfenning logistics group": {
+    "employees": 3700,
+    "industry": "Logistik und Transport",
+    "headquarter": "Heddesheim"
+  },
+  "PHOENIX group": {
+    "employees": 48000,
+    "industry": "Pharmagroßhandel",
+    "headquarter": "Mannheim",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.phoenixgroup.eu/de/karriere/jobs"
+  },
+  "Pilz GmbH & Co. KG": {
+    "employees": 2500,
+    "industry": "Automatisierungstechnik",
+    "headquarter": "Ostfildern"
+  },
+  "Pneuhage Management GmbH & Co. KG": {
+    "employees": 2400,
+    "industry": "Reifenhandel",
+    "headquarter": "Karlsruhe"
+  },
+  "Prettl Unternehmensgruppe": {
+    "employees": 10000,
+    "industry": "Automotive, Electronics",
+    "headquarter": "Pfullingen"
+  },
+  "ProServ Produktionsservice und Personaldienste GmbH": {
+    "employees": 1100,
+    "industry": "Personaldienstleistungen",
+    "headquarter": "Karlsruhe"
+  },
+  "Putzmeister Holding GmbH": {
+    "employees": 3100,
+    "industry": "Maschinenbau",
+    "headquarter": "Aichtal"
+  },
+  "PWO AG": {
+    "employees": 3191,
+    "industry": "Automobilzulieferer",
+    "headquarter": "Oberkirch"
+  },
+  "R. Stahl Aktiengesellschaft": {
+    "employees": 1754,
+    "industry": "Elektrotechnik",
+    "headquarter": "Waldenburg"
+  },
+  "RAFI GmbH & Co. KG": {
+    "employees": 1200,
+    "industry": "Elektrotechnik",
+    "headquarter": "Berg"
+  },
+  "Ravensburger AG": {
+    "employees": 2414,
+    "industry": "Verlagswesen",
+    "headquarter": "Ravensburg"
+  },
+  "RECARO Aircraft Seating GmbH & Co. KG": {
+    "employees": 2100,
+    "industry": "Flugzeugsitze",
+    "headquarter": "Schwäbisch Hall"
+  },
+  "REISSER AG": {
+    "employees": 1980,
+    "industry": "Sanitär- und Heizungsgroßhandel",
+    "headquarter": "Böblingen"
+  },
+  "Rems-Murr-Kliniken gGmbH": {
+    "employees": 3000,
+    "industry": "Gesundheitswesen",
+    "headquarter": "Winnenden"
+  },
+  "Rheinmetall Automotive AG": {
+    "employees": 11000,
+    "industry": "Automobilzulieferer",
+    "headquarter": "Neckarsulm",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.rheinmetall.com/de/karriere/uebersicht-karriere"
+  },
+  "Rhein-Neckar-Verkehr GmbH (rnv)": {
+    "employees": 2664,
+    "industry": "Personennahverkehr",
+    "headquarter": "Mannheim"
+  },
+  "RICHARD WOLF GMBH": {
+    "employees": 1842,
+    "industry": "Medizintechnik",
+    "headquarter": "Knittlingen"
+  },
+  "RKH Regionale Kliniken Holding und Services GmbH": {
+    "employees": 8076,
+    "industry": "Gesundheitswesen",
+    "headquarter": "Ludwigsburg",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.rkh-karriere.de/"
+  },
+  "Robert Bosch GmbH": {
+    "employees": 429000,
+    "industry": "Technologie-/Dienstleistungsunternehmen",
+    "headquarter": "Gerlingen-Schillerhöhe",
+    "career software": "SmartRecruiters",
+    "career URL (corporate)": "https://jobs.bosch.com/",
+    "career URL (code)": "https://api.smartrecruiters.com/v1/companies/BoschGroup/postings"
+  },
+  "Robert-Bosch-Krankenhaus GmbH": {
+    "employees": 3000,
+    "industry": "Gesundheitswesen",
+    "headquarter": "Stuttgart"
+  },
+  "Roche Deutschland Holding GmbH": {
+    "employees": 18242,
+    "industry": "Pharmaindustrie",
+    "headquarter": "Grenzach-Wyhlen",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://careers.roche.com/de/de/home"
+  },
+  "Roche Diagnostics Deutschland GmbH": {
+    "employees": 1003,
+    "industry": "Diagnosesysteme",
+    "headquarter": "Mannheim"
+  },
+  "Roche Diagnostics GmbH": {
+    "employees": 13886,
+    "industry": "Diagnosesysteme",
+    "headquarter": "Mannheim",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://careers.roche.com/de/de/home"
+  },
+  "Röchling SE & Co. KG": {
+    "employees": 11988,
+    "industry": "Kunststoffverarbeitung",
+    "headquarter": "Mannheim",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://jobs.roechling.com/de/karriere"
+  },
+  "Röhm GmbH": {
+    "employees": 1000,
+    "industry": "Spanntechnik",
+    "headquarter": "Sontheim a. d. Brenz"
+  },
+  "Rolls-Royce Power Systems": {
+    "employees": 10000,
+    "industry": "Antriebssysteme",
+    "headquarter": "Friedrichshafen",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://careers.rolls-royce.com/de"
+  },
+  "Rommelag SE & Co. KG": {
+    "employees": 1895,
+    "industry": "Maschinenbau",
+    "headquarter": "Sulzbach-Laufen"
+  },
+  "Röther Beteiligungs GmbH": {
+    "employees": 2833,
+    "industry": "Modehandel",
+    "headquarter": "Michelfeld"
+  },
+  "Roto Frank Holding AG": {
+    "employees": 4996,
+    "industry": "Bauzulieferer",
+    "headquarter": "Leinfelden-Echterdingen",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.jobs.roto-frank.com/"
+  },
+  "RUD Ketten Rieger & Dietz GmbH u. Co. KG": {
+    "employees": 1700,
+    "industry": "Kettensysteme",
+    "headquarter": "Aalen"
+  },
+  "Rud. Otto Meyer Technik GmbH & Co. KG": {
+    "employees": 2300,
+    "industry": "Technische Gebäudeausrüstung",
+    "headquarter": "Stuttgart"
+  },
+  "Rutronik Elektronische Bauelemente GmbH": {
+    "employees": 1900,
+    "industry": "Distribution",
+    "headquarter": "Ispringen"
+  },
+  "SAP SE": {
+    "employees": 105315,
+    "industry": "Informationstechnologie",
+    "headquarter": "Walldorf",
+    "career software": "SAP SuccessFactors",
+    "career URL (corporate)": "https://jobs.sap.com/"
+  },
+  "Schaeffler Automotive Buehl GmbH & Co. KG": {
+    "employees": 84000,
+    "industry": "Automobilzulieferer",
+    "headquarter": "Bühl",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://jobs.schaeffler.com/"
+  },
+  "Scholz Recycling GmbH": {
+    "employees": 1127,
+    "industry": "Schrott- und Metallrecycling",
+    "headquarter": "Essingen"
+  },
+  "Schuler Group GmbH": {
+    "employees": 4700,
+    "industry": "Maschinenbau",
+    "headquarter": "Göppingen",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://career.schulergroup.com/de/"
+  },
+  "SCHUNK SE & Co. KG": {
+    "employees": 3700,
+    "industry": "Spanntechnik",
+    "headquarter": "Lauffen am Neckar"
+  },
+  "Schwäbisch Hall - Gruppe": {
+    "employees": 3603,
+    "industry": "Finanzdienstleistungen",
+    "headquarter": "Schwäbisch Hall"
+  },
+  "Schwarz Gruppe": {
+    "employees": 575000,
+    "industry": "Lebensmitteleinzelhandel",
+    "headquarter": "Neckarsulm",
+    "career software": "Diverse (je Sparte)",
+    "career URL (corporate)": "https://gruppe.schwarz/karriere"
+  },
+  "SchwörerHaus KG": {
+    "employees": 1753,
+    "industry": "Bauwirtschaft",
+    "headquarter": "Hohenstein"
+  },
+  "Seifert Logistics Group": {
+    "employees": 4000,
+    "industry": "Transport und Spedition",
+    "headquarter": "Ulm"
+  },
+  "SEW-EURODRIVE GmbH & Co KG": {
+    "employees": 22000,
+    "industry": "Antriebstechnik",
+    "headquarter": "Bruchsal",
+    "career software": "Oracle Cloud HCM",
+    "career URL (corporate)": "https://www.sew-eurodrive.de/careers/careers.html"
+  },
+  "SHW AG": {
+    "employees": 1800,
+    "industry": "Automobilzulieferer",
+    "headquarter": "Aalen"
+  },
+  "SICK AG": {
+    "employees": 12185,
+    "industry": "Sensorik",
+    "headquarter": "Waldkirch",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://jobs.sick.com/"
+  },
+  "Sika Deutschland GmbH": {
+    "employees": 1274,
+    "industry": "Bauchemie",
+    "headquarter": "Stuttgart"
+  },
+  "Simon Hegele GmbH": {
+    "employees": 3000,
+    "industry": "Logistik und Services",
+    "headquarter": "Karlsruhe"
+  },
+  "SLK-Kliniken Heilbronn GmbH": {
+    "employees": 5750,
+    "industry": "Gesundheitswesen",
+    "headquarter": "Heilbronn",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.slk-kliniken.de/karriere/"
+  },
+  "SMP Deutschland GmbH": {
+    "employees": 13500,
+    "industry": "Kunststoffindustrie",
+    "headquarter": "Bötzingen"
+  },
+  "Sparda-Bank Baden-Württemberg eG": {
+    "employees": 677,
+    "industry": "Kreditwirtschaft",
+    "headquarter": "Stuttgart"
+  },
+  "Sparkasse Freiburg-Nördlicher Breisgau": {
+    "employees": 964,
+    "industry": "Kreditwirtschaft",
+    "headquarter": "Freiburg im Breisgau"
+  },
+  "Sparkasse Heidelberg": {
+    "employees": 1029,
+    "industry": "Kreditwirtschaft",
+    "headquarter": "Heidelberg"
+  },
+  "Sparkasse Karlsruhe": {
+    "employees": 1278,
+    "industry": "Kreditwirtschaft",
+    "headquarter": "Karlsruhe"
+  },
+  "Sparkasse Pforzheim Calw": {
+    "employees": 1869,
+    "industry": "Kreditwirtschaft",
+    "headquarter": "Pforzheim"
+  },
+  "Sparkasse Rhein Neckar Nord": {
+    "employees": 707,
+    "industry": "Kreditwirtschaft",
+    "headquarter": "Mannheim"
+  },
+  "Sparkasse Ulm": {
+    "employees": 920,
+    "industry": "Kreditwirtschaft",
+    "headquarter": "Ulm"
+  },
+  "Sparkasse Zollernalb": {
+    "employees": 570,
+    "industry": "Kreditwirtschaft",
+    "headquarter": "Balingen"
+  },
+  "Städtisches Klinikum Karlsruhe gGmbH": {
+    "employees": 4932,
+    "industry": "Gesundheitswesen",
+    "headquarter": "Karlsruhe",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.klinikum-karlsruhe.com/beruf-karriere/stellenmarkt.html"
+  },
+  "Stadtwerke Heidelberg GmbH": {
+    "employees": 1031,
+    "industry": "Energieversorgung",
+    "headquarter": "Heidelberg"
+  },
+  "Stadtwerke Karlsruhe GmbH": {
+    "employees": 1189,
+    "industry": "Energie- und Trinkwasserversorgung",
+    "headquarter": "Karlsruhe"
+  },
+  "Steinbeis GmbH & Co. KG": {
+    "employees": 1903,
+    "industry": "Forschung und Technologietransfer",
+    "headquarter": "Stuttgart"
+  },
+  "Sto SE & Co. KGaA": {
+    "employees": 5783,
+    "industry": "Baustoffzulieferer",
+    "headquarter": "Stühlingen",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.sto.de/s/karriere"
+  },
+  "Stuttgarter Gebäudereinigung Venter GmbH & Co. KG": {
+    "employees": 1321,
+    "industry": "Gebäudereinigung",
+    "headquarter": "Fellbach"
+  },
+  "Stuttgarter Straßenbahnen AG": {
+    "employees": 3400,
+    "industry": "Verkehrswirtschaft",
+    "headquarter": "Stuttgart"
+  },
+  "Süddeutsche Krankenversicherung a. G.": {
+    "employees": 740,
+    "industry": "Versicherung",
+    "headquarter": "Fellbach"
+  },
+  "SÜDPACK Verpackungen SE & Co. KG": {
+    "employees": 1794,
+    "industry": "Verpackungsmittelhersteller",
+    "headquarter": "Ochsenhausen"
+  },
+  "Südwestdeutsche Medien Holding GmbH": {
+    "employees": 4600,
+    "industry": "Medienwirtschaft",
+    "headquarter": "Stuttgart"
+  },
+  "Südzucker AG": {
+    "employees": 19200,
+    "industry": "Nahrungsmittelherstellung",
+    "headquarter": "Mannheim",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.suedzuckergroup.com/de/karriere"
+  },
+  "SV SparkassenVersicherung": {
+    "employees": 5097,
+    "industry": "Versicherung",
+    "headquarter": "Stuttgart",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.sparkassenversicherung.de/karriere.html"
+  },
+  "SWEG Südwestdeutsche Landesverkehrs-GmbH": {
+    "employees": 1800,
+    "industry": "Schienen-/Busverkehr",
+    "headquarter": "Lahr/Schwarzwald"
+  },
+  "SWU Stadtwerke Ulm/Neu-Ulm GmbH": {
+    "employees": 1180,
+    "industry": "Energie-/Wasserversorgung, Nahverkehr",
+    "headquarter": "Ulm"
+  },
+  "SYNERGIE Personal Deutschland GmbH": {
+    "employees": 2000,
+    "industry": "Personaldienstleistungen",
+    "headquarter": "Karlsruhe"
+  },
+  "Syntegon Technology GmbH": {
+    "employees": 6300,
+    "industry": "Prozess- und Verpackungstechnik",
+    "headquarter": "Waiblingen",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://jobs.syntegon.com/"
+  },
+  "Takeda GmbH": {
+    "employees": 1200,
+    "industry": "Pharmaindustrie",
+    "headquarter": "Singen"
+  },
+  "TAKKT AG": {
+    "employees": 2385,
+    "industry": "B2B-Omnichannel-Handel",
+    "headquarter": "Stuttgart"
+  },
+  "TDK Micronas GmbH": {
+    "employees": 1000,
+    "industry": "Halbleiter, Automobilelektronik",
+    "headquarter": "Freiburg im Breisgau"
+  },
+  "TeamViewer SE": {
+    "employees": 1500,
+    "industry": "Informationstechnologie",
+    "headquarter": "Göppingen"
+  },
+  "TESAT": {
+    "employees": 1200,
+    "industry": "Telekommunikationstechnik (Raumfahrt)",
+    "headquarter": "Backnang"
+  },
+  "Testo SE & Co. KGaA": {
+    "employees": 4000,
+    "industry": "Messtechnik",
+    "headquarter": "Titisee-Neustadt"
+  },
+  "Teva GmbH": {
+    "employees": 2900,
+    "industry": "Pharmaindustrie",
+    "headquarter": "Ulm"
+  },
+  "TGS Teegen Gebäudedienstleistungen": {
+    "employees": 1831,
+    "industry": "Gebäudereinigung",
+    "headquarter": "Fellbach"
+  },
+  "Thales Deutschland GmbH": {
+    "employees": 81000,
+    "industry": "Elektronikkonzern",
+    "headquarter": "Ditzingen",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://careers.thalesgroup.com/de/de/search-results"
+  },
+  "Theo Förch GmbH & Co. KG": {
+    "employees": 3668,
+    "industry": "Werkstatt-/Montageartikel",
+    "headquarter": "Neuenstadt"
+  },
+  "Trelleborg Sealing Solutions Germany GmbH": {
+    "employees": 9500,
+    "industry": "Dichtungslösungen",
+    "headquarter": "Stuttgart",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.trelleborg.com/de-de/seals/about-us/karriere"
+  },
+  "Trigema W. Grupp KG": {
+    "employees": 1141,
+    "industry": "Textil",
+    "headquarter": "Burladingen"
+  },
+  "TTS Tooltechnic Systems AG & Co. KG (Festool)": {
+    "employees": 3418,
+    "industry": "Elektrowerkzeuge",
+    "headquarter": "Wendlingen am Neckar"
+  },
+  "Uhlmann Pac-Systeme GmbH & Co. KG": {
+    "employees": 2300,
+    "industry": "Verpackungsanlagen Pharma",
+    "headquarter": "Laupheim"
+  },
+  "Universitätsklinikum Mannheim GmbH": {
+    "employees": 4644,
+    "industry": "Gesundheitswesen",
+    "headquarter": "Mannheim",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.umm.uni-heidelberg.de/karriere/"
+  },
+  "Universitätsklinikum Tübingen A.ö.R.": {
+    "employees": 11000,
+    "industry": "Gesundheitswesen",
+    "headquarter": "Tübingen",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.medizin.uni-tuebingen.de/de/karriere"
+  },
+  "Universitätsklinikum Ulm": {
+    "employees": 7000,
+    "industry": "Gesundheitswesen",
+    "headquarter": "Ulm",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.uni-ulm.de/einrichtungen/zuv/dezernat-3/stellenportal/stellenangebote/"
+  },
+  "Unternehmensgruppe Dr. Willmar Schwabe": {
+    "employees": 4000,
+    "industry": "Pharma",
+    "headquarter": "Karlsruhe"
+  },
+  "Unternehmensgruppe fischer": {
+    "employees": 4700,
+    "industry": "Kunststoffindustrie",
+    "headquarter": "Waldachtal",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.fischer-group.com/karriere"
+  },
+  "Uzin Utz Aktiengesellschaft": {
+    "employees": 1500,
+    "industry": "Bauindustrie",
+    "headquarter": "Ulm"
+  },
+  "VARTA AG": {
+    "employees": 4200,
+    "industry": "Batteriehersteller",
+    "headquarter": "Ellwangen"
+  },
+  "VBK - Verkehrsbetriebe Karlsruhe GmbH": {
+    "employees": 1437,
+    "industry": "Verkehrswirtschaft",
+    "headquarter": "Karlsruhe"
+  },
+  "Verallia Deutschland AG": {
+    "employees": 1489,
+    "industry": "Glasverpackungen",
+    "headquarter": "Bad Wurzach"
+  },
+  "Vereinigte Volksbanken eG": {
+    "employees": 667,
+    "industry": "Kreditwirtschaft",
+    "headquarter": "Sindelfingen"
+  },
+  "Verlagsgruppe Georg von Holtzbrinck GmbH": {
+    "employees": 5658,
+    "industry": "Medienwirtschaft",
+    "headquarter": "Stuttgart"
+  },
+  "Vetter Pharma-Fertigung GmbH & Co. KG": {
+    "employees": 6600,
+    "industry": "Pharmadienstleister",
+    "headquarter": "Ravensburg",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.vetter-pharma.com/de/karriere-pharma/"
+  },
+  "ViDia Christliche Kliniken": {
+    "employees": 3000,
+    "industry": "Gesundheitswesen",
+    "headquarter": "Karlsruhe"
+  },
+  "Vinzenz von Paul Hospital gGmbH": {
+    "employees": 1500,
+    "industry": "Gesundheitswesen",
+    "headquarter": "Rottweil"
+  },
+  "Vinzenz von Paul Kliniken gGmbH": {
+    "employees": 2553,
+    "industry": "Gesundheitswesen",
+    "headquarter": "Stuttgart"
+  },
+  "Voith GmbH & Co. KGaA": {
+    "employees": 22479,
+    "industry": "Maschinen- und Anlagenbau",
+    "headquarter": "Heidenheim",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://jobs.voith.com/"
+  },
+  "Volksbank pur eG Karlsruhe": {
+    "employees": 1372,
+    "industry": "Kreditwirtschaft",
+    "headquarter": "Karlsruhe"
+  },
+  "Volksbank Stuttgart": {
+    "employees": 950,
+    "industry": "Kreditwirtschaft",
+    "headquarter": "Stuttgart"
+  },
+  "VPV Versicherungen": {
+    "employees": 606,
+    "industry": "Versicherung",
+    "headquarter": "Stuttgart"
+  },
+  "VS Vereinigte Spezialmöbelfabriken GmbH & Co. KG": {
+    "employees": 1700,
+    "industry": "Möbel",
+    "headquarter": "Tauberbischofsheim"
+  },
+  "Waldburg-Zeil Kliniken GmbH & Co. KG": {
+    "employees": 3303,
+    "industry": "Gesundheitswesen",
+    "headquarter": "Isny"
+  },
+  "Waldner Holding SE & Co. KG": {
+    "employees": 1726,
+    "industry": "Verpackungsmaschinen, Labortechnik",
+    "headquarter": "Wangen"
+  },
+  "Walter AG": {
+    "employees": 3800,
+    "industry": "Zerspanungswerkzeuge",
+    "headquarter": "Tübingen"
+  },
+  "WEBER-HYDRAULIK GMBH": {
+    "employees": 1500,
+    "industry": "Hydraulische Komponenten",
+    "headquarter": "Güglingen"
+  },
+  "Weishaupt Gruppe": {
+    "employees": 4315,
+    "industry": "Energie-Technik",
+    "headquarter": "Schwendi",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://karriere.weishaupt.de/"
+  },
+  "Weleda AG": {
+    "employees": 2320,
+    "industry": "Pharma / Naturkosmetik",
+    "headquarter": "Arlesheim (CH)"
+  },
+  "WGV Versicherungen": {
+    "employees": 1150,
+    "industry": "Versicherung",
+    "headquarter": "Stuttgart"
+  },
+  "Wieland-Werke Aktiengesellschaft": {
+    "employees": 9830,
+    "industry": "Metallerzeugnisse",
+    "headquarter": "Ulm",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://jobs.wieland.com/de/jobs"
+  },
+  "Wilhelm Layher GmbH & Co KG": {
+    "employees": 2700,
+    "industry": "Systemgerüste",
+    "headquarter": "Güglingen-Eibensbach"
+  },
+  "Winterhalter Gastronom GmbH": {
+    "employees": 2100,
+    "industry": "Maschinenbau",
+    "headquarter": "Meckenbeuren"
+  },
+  "Wirthwein-Gruppe": {
+    "employees": 3000,
+    "industry": "Kunststofftechnik",
+    "headquarter": "Creglingen"
+  },
+  "WITTENSTEIN SE": {
+    "employees": 2800,
+    "industry": "Mechatronische Antriebstechnik",
+    "headquarter": "Igersheim"
+  },
+  "Witzenmann GmbH": {
+    "employees": 4500,
+    "industry": "Metallerzeugnisse",
+    "headquarter": "Pforzheim",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://jobs.witzenmann.com/"
+  },
+  "WOLFF & MÜLLER Gruppe": {
+    "employees": 2200,
+    "industry": "Bauwirtschaft",
+    "headquarter": "Stuttgart"
+  },
+  "Woodward L'Orange GmbH": {
+    "employees": 1200,
+    "industry": "Motormanagement/Einspritzsysteme",
+    "headquarter": "Stuttgart"
+  },
+  "Wörwag Pharma GmbH & Co.KG": {
+    "employees": 1400,
+    "industry": "Pharmaindustrie",
+    "headquarter": "Böblingen"
+  },
+  "Würth Gruppe": {
+    "employees": 88479,
+    "industry": "Montagetechnik",
+    "headquarter": "Künzelsau",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://your-career.wuerth.com/"
+  },
+  "Wüstenrot & Württembergische AG": {
+    "employees": 7500,
+    "industry": "Finanzdienstleistung",
+    "headquarter": "Kornwestheim",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://www.ww-ag.com/de/karriere"
+  },
+  "Zehnder Group Deutschland GmbH": {
+    "employees": 3500,
+    "industry": "Heizungs- und Klimatechnik",
+    "headquarter": "Lahr/Schwarzwald"
+  },
+  "ZEISS Gruppe": {
+    "employees": 44000,
+    "industry": "Technologieunternehmen",
+    "headquarter": "Oberkochen",
+    "career software": "Workday",
+    "career URL (corporate)": "https://zeissgroup.wd3.myworkdayjobs.com/External",
+    "career URL (code)": "https://zeissgroup.wd3.myworkdayjobs.com/wday/cxs/zeissgroup/External/jobs"
+  },
+  "Zeppelin GmbH": {
+    "employees": 8500,
+    "industry": "Bau- und Landmaschinen",
+    "headquarter": "Friedrichshafen",
+    "career software": "Workday",
+    "career URL (corporate)": "https://www.zeppelin.com/de/de/karriere/",
+    "career URL (code)": "https://zeppelin.wd3.myworkdayjobs.com/wday/cxs/zeppelin/de-DE/careers/jobs"
+  },
+  "ZF Friedrichshafen AG": {
+    "employees": 168700,
+    "industry": "Automobilzulieferer",
+    "headquarter": "Friedrichshafen",
+    "career software": "SAP SuccessFactors",
+    "career URL (corporate)": "https://www.zf.com/careers"
+  },
+  "ZF LIFETEC": {
+    "employees": 36000,
+    "industry": "Automobilzulieferer",
+    "headquarter": "Alfdorf",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://careers.zf-lifetec.com/"
+  },
+  "ZIEHL-ABEGG": {
+    "employees": 5000,
+    "industry": "Antriebstechnik, Lufttechnik",
+    "headquarter": "Künzelsau",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://career.ziehl-abegg.com/"
+  },
+  "Zollern GmbH & Co. KG": {
+    "employees": 2000,
+    "industry": "Metallverarbeitung",
+    "headquarter": "Sigmaringendorf"
+  },
+  "Zollernalb Klinikum gGmbH": {
+    "employees": 1500,
+    "industry": "Gesundheitswesen",
+    "headquarter": "Balingen"
+  },
+  "ZwickRoell SE": {
+    "employees": 1865,
+    "industry": "Materialprüfung",
+    "headquarter": "Ulm"
+  },
+  "Emil Schmid Maschinenbau GmbH & Co. KG": {
+    "employees": 300,
+    "industry": "Maschinenbau (Sondermaschinen-/Anlagenbau)",
+    "headquarter": "Sonnenbühl-Willmandingen"
+  },
+  "Grüner Systemtechnik GmbH & Co. KG": {
+    "employees": 900,
+    "industry": "Maschinenbau/Automobilzulieferer (Bearbeitungszentren, Gehäuse)",
+    "headquarter": "Bad Überkingen"
+  },
+  "Polytec GmbH": {
+    "employees": 500,
+    "industry": "Technologie (optische Messtechnik)",
+    "headquarter": "Waldbronn"
+  },
+  "Leadec Holding BV & Co. KG": {
+    "employees": 22500,
+    "industry": "Dienstleistung (Industrieservice/Fabrik-Lebenszyklus)",
+    "headquarter": "Stuttgart"
+  },
+  "Würth Elektronik eiSos GmbH & Co. KG": {
+    "employees": 7300,
+    "industry": "Technologie (elektronische Bauteile)",
+    "headquarter": "Niedernhall",
+    "career software": "Eigenes Portal",
+    "career URL (corporate)": "https://jobs.we-online.com/"
+  },
+  "Precitec GmbH & Co. KG": {
+    "employees": 750,
+    "industry": "Technologie (Lasertechnik, optische Messtechnik)",
+    "headquarter": "Gaggenau"
+  },
+  "MPDV Mikrolab GmbH": {
+    "employees": 530,
+    "industry": "Dienstleistung/Software (Manufacturing Execution Systems)",
+    "headquarter": "Mosbach"
+  },
+  "KASTO Maschinenbau GmbH & Co. KG": {
+    "employees": 700,
+    "industry": "Maschinenbau (Sägemaschinen, Lagersysteme)",
+    "headquarter": "Achern"
+  },
+  "IT Baden-Württemberg (BITBW)": {
+    "employees": 400,
+    "industry": "Dienstleistung (zentraler IT-Dienstleister der Landesverwaltung BW)",
+    "headquarter": "Stuttgart"
+  }
+}
