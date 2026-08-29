@@ -53,5 +53,45 @@
     "patterns": {
       "job_count": "(\\d+)\\s+aktuelle\\s+Stellenangebote"
     }
+  },
+  "diconium": {
+    "firma": "diconium GmbH",
+    "mitarbeiter_zahl": 2300,
+   "mitarbeiter_basis": "weltweit",
+   "status": "offen",
+   "parser": "workday",
+    "url": "https://diconium.wd3.myworkdayjobs.com/wday/cxs/diconium/diconium/jobs"
+  },
+  "covestro": {
+    "firma": "Covestro Deutschland AG",
+    "mitarbeiter_zahl": 7250,
+    "mitarbeiter_basis": "Deutschland",
+    "status": "offen",
+    "parser": "workday",
+    "url": "https://covestro.wd3.myworkdayjobs.com/wday/cxs/covestro/cov_external/jobs"
+  },
+  "trumpf": {
+    "firma": "TRUMPF SE + Co. KG",
+    "mitarbeiter_zahl": 9337,
+    "mitarbeiter_basis": "Deutschland",
+    "status": "offen",
+    "parser": "workday",
+    "url": "https://trumpf.wd3.myworkdayjobs.com/wday/cxs/trumpf/TRUMPF_Graduates_and_Professionals/jobs"
+  },
+  "swisscom": {
+    "firma": "Swisscom AG",
+    "mitarbeiter_zahl": 22500,
+    "mitarbeiter_basis": "weltweit_fallback",
+    "status": "offen",
+    "parser": "workday",
+    "url": "https://swisscom.wd103.myworkdayjobs.com/wday/cxs/swisscom/SwisscomExternalCareers/jobs"
+  },
+  "heidelberger_druckmaschinen": {
+    "firma": "Heidelberger Druckmaschinen AG",
+    "mitarbeiter_zahl": 9500,
+    "mitarbeiter_basis": "weltweit",
+    "status": "offen",
+    "parser": "workday",
+    "url": "https://heidelberg.wd502.myworkdayjobs.com/wday/cxs/heidelberg/careersHEIDELBERG/jobs"
   }
 }
