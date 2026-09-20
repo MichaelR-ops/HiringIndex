@@ -104,6 +104,115 @@ def parse_sap_successfactors_job_count(config: Mapping[str, Any]) -> int:
     return total
 
 
+def parse_brassring_job_count(config: Mapping[str, Any]) -> int:
+    """Fetch a BrassRing (IBM Kenexa) career portal job count.
+
+    BrassRing career portals render the job list client-side. The count is
+    fetched via a two-step flow:
+
+    1. GET the search Home page and collect the ASP.NET session cookies,
+       the CSRF token (``__RequestVerificationToken``) and the hidden partner/
+       site/CookieValue fields.
+    2. POST to ``/TgNewUI/Search/Ajax/PowerSearchJobs`` (relative to the Home
+       URL host) with an empty keyword search and read ``JobsCount`` from the
+       JSON response.
+    """
+    page_url = config.get("url", None)
+    if not isinstance(page_url, str) or not page_url:
+        raise ValueError("BrassRing parser URL must be a non-empty string")
+
+    session = requests.Session()
+    headers = {
+        "Accept": "application/json",
+        "Content-Type": "application/json",
+        "User-Agent": "HiringIndex/1.0",
+    }
+
+    home_response = session.get(
+        page_url,
+        headers={
+            "User-Agent": (
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                "AppleWebKit/537.36"
+            )
+        },
+        timeout=20,
+    )
+    home_response.raise_for_status()
+    home_html = home_response.text
+
+    def hidden_value(name, attr="id"):
+        pattern = re.compile(
+            re.escape(attr) + r'="' + re.escape(name) + r'"[^>]*value="([^"]*)"'
+        )
+        match = pattern.search(home_html)
+        if not match:
+            pattern = re.compile(
+                r'name="' + re.escape(name) + r'"[^>]*value="([^"]*)"'
+            )
+            match = pattern.search(home_html)
+        return match.group(1) if match else ""
+
+    partner_id = hidden_value("partnerId")
+    site_id = hidden_value("siteId")
+    cookie_value = hidden_value("CookieValue")
+    if not partner_id or not site_id:
+        raise ValueError(
+            "BrassRing response does not contain hidden partnerId/siteId fields"
+        )
+
+    csrf_pattern = re.compile(
+        r'name="__RequestVerificationToken"[^>]*value="([^"]*)"'
+    )
+    csrf_match = csrf_pattern.search(home_html)
+    if not csrf_match:
+        raise ValueError(
+            "BrassRing response does not contain a CSRF token"
+        )
+
+    from urllib.parse import urljoin, urlparse
+
+    api_url = "https://" + urlparse(page_url).netloc
+    api_url = urljoin(api_url, "/TgNewUI/Search/Ajax/PowerSearchJobs")
+
+    payload = {
+        "PartnerId": partner_id,
+        "SiteId": site_id,
+        "Keyword": "",
+        "Location": "",
+        "KeywordCustomSolrFields": None,
+        "LocationCustomSolrFields": None,
+        "TurnOffHttps": False,
+        "Latitude": 0,
+        "Longitude": 0,
+        "FacetFilterFields": {"Facet": None},
+        "PowerSearchOptions": {"PowerSearchOption": None},
+        "SortType": "",
+        "EncryptedSessionValue": cookie_value,
+        "PageIndex": 1,
+        "ItemsPerPage": 10,
+    }
+    search_response = session.post(
+        api_url,
+        json=payload,
+        headers={**headers, "RFT": csrf_match.group(1)},
+        timeout=20,
+    )
+    search_response.raise_for_status()
+    data = search_response.json()
+    if not isinstance(data, Mapping):
+        raise ValueError("BrassRing response must be a JSON object")
+
+    total = data.get("JobsCount")
+    if isinstance(total, bool) or not isinstance(total, int):
+        raise ValueError(
+            "BrassRing response does not contain an integer JobsCount"
+        )
+    if total < 0:
+        raise ValueError("BrassRing job count cannot be negative")
+    return total
+
+
 def extract_job_count(
     soup: BeautifulSoup,
     config: Dict[str, Any]
@@ -137,25 +246,31 @@ def extract_job_count(
         return len(rows)
     
     selector = selectors.get("job_count")
-    if not selector:
-        raise ValueError("No job_count selector configured")
-    
-    # Support both single selector (string) and multiple selectors (list)
-    selector_list = selector if isinstance(selector, list) else [selector]
-    
+    pattern = patterns.get("job_count")
+
     text = None
-    for single_selector in selector_list:
-        element = soup.select_one(single_selector)
-        if element:
-            text = element.get_text(" ", strip=True)
-            break
-    
+    if selector:
+        # Support both single selector (string) and multiple selectors (list)
+        selector_list = selector if isinstance(selector, list) else [selector]
+
+        for single_selector in selector_list:
+            element = soup.select_one(single_selector)
+            if element:
+                text = element.get_text(" ", strip=True)
+                break
+
+    if text is None and pattern:
+        # Fallback: apply the regex pattern to the raw HTML source.
+        # Covers SSR/embedded script JSON (e.g. Phenom People totalHits).
+        text = str(soup)
+
     if not text:
         raise ValueError(
-            f"Element not found with selectors: {selector_list}"
+            f"Element not found with selectors: {selector}"
+            if selector
+            else "No job_count selector configured"
         )
-    
-    pattern = patterns.get("job_count")
+
     if not pattern:
         raise ValueError("No job_count pattern configured")
     

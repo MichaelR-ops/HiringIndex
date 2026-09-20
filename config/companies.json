@@ -1,4 +1,63 @@
 {
+  "aesculap_ag": {
+    "firma": "Aesculap AG",
+    "industry": "Medizintechnik",
+    "headquarter": "Tuttlingen",
+    "mitarbeiter_zahl": 63000,
+    "mitarbeiter_basis": "Konzern_BBraun_global",
+    "status": "completed",
+    "notiz": "Teil der B. Braun Gruppe; B. Braun Global Job Market (Default-Suche de_DE einschliesslich DE-Standorte)",
+    "parser": "sap_successfactors",
+    "url": "https://jobs.bbraun.com/services/recruiting/v1/jobs"
+  },
+  "adm_wild_europe": {
+    "firma": "ADM WILD Europe GmbH & Co. KG",
+    "industry": "Nahrungsmittelherstellung",
+    "headquarter": "Eppelheim",
+    "mitarbeiter_zahl": 2000,
+    "mitarbeiter_basis": "DE_firma",
+    "status": "completed",
+    "notiz": "Alle auf dem ADM-Karriereportal gelisteten Stellen (global; aktuell ueberwiegend USA-Standorte)",
+    "parser": "brassring",
+    "url": "https://sjobs.brassring.com/TGnewUI/Search/Home/Home?partnerid=25416&siteid=5998"
+  },
+  "adk_gmbh": {
+    "firma": "ADK GmbH für Gesundheit und Soziales",
+    "industry": "Gesundheitsdienstleistungen",
+    "headquarter": "Ehingen (Donau)",
+    "mitarbeiter_zahl": 2250,
+    "mitarbeiter_basis": "DE_firma",
+    "status": "completed",
+    "parser": "html",
+    "url": "https://www.adk-gmbh.de/stellenangebote/stellenangebote.html",
+    "selectors": {
+      "job_count_rows": "div.joboffer_outer"
+    }
+  },
+  "acps_automotive": {
+    "firma": "ACPS Automotive GmbH",
+    "industry": "Automobilzulieferer",
+    "headquarter": "Ingersheim",
+    "mitarbeiter_zahl": 2093,
+    "mitarbeiter_basis": "DE_firma",
+    "status": "completed",
+    "parser": "sap_successfactors",
+    "url": "https://careers.acps-automotive.com/services/recruiting/v1/jobs",
+    "locale": "de_DE"
+  },
+  "abb_ag": {
+    "firma": "ABB AG",
+    "industry": "Energie- und Automationstechnik",
+    "headquarter": "Mannheim",
+    "mitarbeiter_zahl": 10500,
+    "mitarbeiter_basis": "DE_firma",
+    "status": "completed",
+    "parser": "html",
+    "url": "https://careers.abb/dach/de/search-results",
+    "patterns": {
+      "job_count": "\"totalHits\"\\s*:\\s*(\\d+)"
+    }
+  },
   "pepperl_fuchs_se": {
     "firma": "Pepperl+Fuchs SE",
     "mitarbeiter_zahl": 6280,

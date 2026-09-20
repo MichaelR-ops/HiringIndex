@@ -46,3 +46,12 @@ Lies zunächst das Projektverzeichnis, um den Kontext zu verstehen.
 4. Keine Parallelität – sequenziell.
 5. Rate‑Limit‑Handler – max. 1 Request / 2 Sekunden pro Domain.
 6. Falls Bots unerwünscht sind, überspringe den Eintrag und gehe zur nächsten Firma über
+
+## Abgabe (Executorsicht – strukturiert, KEIN Status-Commit)
+- Liefere als letzten Output ein JSON-Report:
+```json
+{"company_key": "...", "firma": "...", "parser": "html|workday|sap_successfactors|brassring", "count": <int>, "ok": true/false, "scope": "DE|global|DACH", "crosscheck_ok": true/false}
+```
+- **Nie** selbst `"completed"` setzen. Endkontrolle + `status` übernimmt der Orchestrator (siehe `cline/Orchestrator.md`).
+- **Cleanup** nach Erfolg: Company-spezifische `scratch_*`-Dateien löschen (`git clean -f 'scratch_*.py'`; generische Utils bleiben!), keine Terminals/Prozesse offen lassen (`pkill -f scratch_` falls nötig), `git status` zeigen.
+
