@@ -10,8 +10,8 @@ Lies zunächst das Projektverzeichnis, um den Kontext zu verstehen.
 
 ## Anweisungen Loop
 1. Quelle finden – prüfe Impressum, Footer‑Links, Sitemap und gängige Pfade (/jobs, /careers, /karriere). Die URL muss eindeutig der Firma zugeordnet sein. Dein Ziel ist es die Karrierewebsite zu identifizieren und herauszufinden wie die Stellenanzahl automatisiert im Rahmen der Projektstruktur auslesbar ist oder auslesbar gemacht werden kann.
-2. Mitarbeiter‑Zahl – falls verfügbar, extrahiere die aktuelle Mitarbeiter‑Zahl. Nutze DE‑Angaben, sonst weltweit. Halte diese Recherche knapp - sie ist zweitrangig.
-3. Parser‑Snippet – erweitere ggf. einen bestehenden Parser nur um das neue Endpoint‑Muster.
+2. Mitarbeiter‑Zahl – falls verfügbar, extrahiere die aktuelle Mitarbeiter‑Zahl. Nutze vorrangig DE‑Angaben, ansonsten aber einfach weltweite Zahlen. Halte diese Recherche knapp - sie ist zweitrangig.
+3. Parser‑Snippet – erweitere ggf. einen bestehenden Parser nur um das neue Endpoint‑Muster. Versuche wenn möglich bestehende Parser zu verwenden.
 4. Input-JSON snippet:
 ```json
 "Firma X" {
@@ -41,7 +41,8 @@ Lies zunächst das Projektverzeichnis, um den Kontext zu verstehen.
 ## Sonstige generelle Regeln
 
 1. Antworte kurz (< 150 Tokens).
-2. Nutze vorhandene Bibliotheken.
+2. Nutze bevorzugt vorhandene Bibliotheken. Eine venv liegt im Projektordner vor. Sorge immer dafür, dass diese aktiviert ist und prüfe ob diese aktiv ist, wenn du Bibliotheken scheinbar nicht vorhanden sind
 3. Halte dich an das Projekt‑Schema.
 4. Keine Parallelität – sequenziell.
 5. Rate‑Limit‑Handler – max. 1 Request / 2 Sekunden pro Domain.
+6. Falls Bots unerwünscht sind, überspringe den Eintrag und gehe zur nächsten Firma über
