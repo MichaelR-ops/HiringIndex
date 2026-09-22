@@ -103,6 +103,33 @@ def parse_sap_successfactors_job_count(config: Mapping[str, Any]) -> int:
         raise ValueError("SAP SuccessFactors job count cannot be negative")
     return total
 
+def parse_smart_recruiters_job_count(config: Mapping[str, Any]) -> int:
+    """Fetch a SmartRecruiters postings API and return its total job count."""
+    target_url = config.get("url", None)
+    if not isinstance(target_url, str) or not target_url:
+        raise ValueError("No SmartRecruiters URL configured")
+    response = requests.get(
+        target_url,
+        params={"limit": 1, "offset": 0},
+        headers={
+            "Accept": "application/json",
+            "User-Agent": "HiringIndex/1.0"
+        },
+        timeout=10
+    )
+    response.raise_for_status()
+    data = response.json()
+    if not isinstance(data, Mapping):
+        raise ValueError("SmartRecruiters response must be a JSON object")
+
+    total = data.get("totalFound")
+    if isinstance(total, bool) or not isinstance(total, int):
+        raise ValueError(
+            "SmartRecruiters response does not contain an integer totalFound"
+        )
+    if total < 0:
+        raise ValueError("SmartRecruiters job count cannot be negative")
+    return total
 
 def parse_brassring_job_count(config: Mapping[str, Any]) -> int:
     """Fetch a BrassRing (IBM Kenexa) career portal job count.

@@ -152,5 +152,77 @@
     "status": "offen",
     "parser": "workday",
     "url": "https://heidelberg.wd502.myworkdayjobs.com/wday/cxs/heidelberg/careersHEIDELBERG/jobs"
+  },
+  "agilent_technologies": {
+    "firma": "Agilent Technologies Deutschland GmbH",
+    "mitarbeiter_zahl": 15500,
+    "mitarbeiter_basis": "weltweit_fallback",
+    "status": "offen",
+    "parser": "workday",
+    "url": "https://agilent.wd5.myworkdayjobs.com/wday/cxs/agilent/Agilent_Careers/jobs"
+  },
+  "essity": {
+    "firma": "Essity",
+    "mitarbeiter_zahl": 36000,
+    "mitarbeiter_basis": "weltweit_fallback",
+    "status": "offen",
+    "parser": "workday",
+    "url": "https://essity.wd3.myworkdayjobs.com/wday/cxs/essity/Job_opportunities/jobs"
+  },
+  "heidelberg_materials": {
+    "firma": "Heidelberg Materials AG",
+    "mitarbeiter_zahl": 51000,
+    "mitarbeiter_basis": "weltweit_fallback",
+    "status": "offen",
+    "parser": "workday",
+    "url": "https://heidelbergmaterials.wd3.myworkdayjobs.com/wday/cxs/heidelbergmaterials/de-DE/Global_HM_Career_Site/jobs"
+  },
+  "kion_group": {
+    "firma": "KION Warehouse Systems GmbH",
+    "mitarbeiter_zahl": 42000,
+    "mitarbeiter_basis": "weltweit_fallback",
+    "status": "offen",
+    "parser": "workday",
+    "url": "https://kiongroup.wd3.myworkdayjobs.com/wday/cxs/kiongroup/KIONGroup/jobs"
+  },
+  "michelin": {
+    "firma": "Michelin Gruppe",
+    "mitarbeiter_zahl": 132500,
+    "mitarbeiter_basis": "weltweit_fallback",
+    "status": "offen",
+    "parser": "workday",
+    "url": "https://michelinhr.wd3.myworkdayjobs.com/wday/cxs/michelinhr/Michelin/jobs"
+  },
+  "zeiss_gruppe": {
+    "firma": "ZEISS Gruppe",
+    "mitarbeiter_zahl": 44000,
+    "mitarbeiter_basis": "weltweit_fallback",
+    "status": "offen",
+    "parser": "workday",
+    "url": "https://zeissgroup.wd3.myworkdayjobs.com/wday/cxs/zeissgroup/External/jobs"
+  },
+  "zeppelin": {
+    "firma": "Zeppelin GmbH",
+    "mitarbeiter_zahl": 8500,
+    "mitarbeiter_basis": "weltweit_fallback",
+    "status": "offen",
+    "parser": "workday",
+    "url": "https://zeppelin.wd3.myworkdayjobs.com/wday/cxs/zeppelin/de-DE/careers/jobs"
+  },
+  "continental": {
+    "firma": "Continental Aktiengesellschaft",
+    "mitarbeiter_zahl": 200000,
+    "mitarbeiter_basis": "weltweit_fallback",
+    "status": "offen",
+    "parser": "smart_recruiters",
+    "url": "https://api.smartrecruiters.com/v1/companies/continental/postings"
+  },
+  "robert_bosch": {
+    "firma": "Robert Bosch GmbH",
+    "mitarbeiter_zahl": 429000,
+    "mitarbeiter_basis": "weltweit_fallback",
+    "status": "offen",
+    "parser": "smart_recruiters",
+    "url": "https://api.smartrecruiters.com/v1/companies/BoschGroup/postings"
   }
 }
