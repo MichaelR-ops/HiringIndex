@@ -1,10 +1,14 @@
 import json
+import os
 import sys
 from src.parser import (
     parse_html_job_count,
     parse_workday_job_count,
     parse_sap_successfactors_job_count,
     parse_brassring_job_count,
+    parse_bite_job_count,
+    parse_htmx_table_job_count,
+    parse_link_count_job_count,
 )
 
 PARSERS = {
@@ -12,9 +16,12 @@ PARSERS = {
     "workday": parse_workday_job_count,
     "sap_successfactors": parse_sap_successfactors_job_count,
     "brassring": parse_brassring_job_count,
+    "bite": parse_bite_job_count,
+    "htmx_table": parse_htmx_table_job_count,
+    "link_count": parse_link_count_job_count,
 }
 
-COMPANY_KEY = "aesculap_ag"
+COMPANY_KEY = os.environ.get("COMPANY_KEY", "alb_fils_klinikum")
 
 def main():
     try:

@@ -155,9 +155,12 @@
   },
   "agilent_technologies": {
     "firma": "Agilent Technologies Deutschland GmbH",
+    "industry": "Analytische Messtechnik",
+    "headquarter": "Waldbronn",
     "mitarbeiter_zahl": 15500,
     "mitarbeiter_basis": "weltweit_fallback",
-    "status": "offen",
+    "status": "completed",
+    "notiz": "Workday jobs-API global; total zum Verifikationszeitpunkt 360 (limit=1/20 identisch), leicht volatil (Folgelauf 359); DE-only-Filter nicht per locationSearch-Facet verfuegbar (HTTP 405), Scope daher global",
     "parser": "workday",
     "url": "https://agilent.wd5.myworkdayjobs.com/wday/cxs/agilent/Agilent_Careers/jobs"
   },
@@ -224,5 +227,75 @@
     "status": "offen",
     "parser": "smart_recruiters",
     "url": "https://api.smartrecruiters.com/v1/companies/BoschGroup/postings"
+  },
+  "a_raymond_gmbh_co_kg": {
+    "firma": "A. Raymond GmbH & Co. KG",
+    "industry": "Fahrzeugtechnik",
+    "headquarter": "Lörrach",
+    "mitarbeiter_zahl": 1412,
+    "mitarbeiter_basis": "DE_firma",
+    "status": "completed",
+    "notiz": "Konzern-Karriereportal careers.araymond.com (Drupal, international/global, EN+DE identisch 9 aktuelle Offerten); Sitemap fuehrt zusaetzlich aeltere/historische Offers (~21 EN), daher Kreuzcheck: 9",
+    "parser": "html",
+    "url": "https://careers.araymond.com/en/job-araymond/offers-list",
+    "selectors": {
+      "job_count_rows": "article.node-offer"
+    }
+  },
+  "akkodis_germany": {
+    "firma": "Akkodis Germany GmbH",
+    "industry": "Engineering- und Consultingdienstleistungen",
+    "headquarter": "Sindelfingen",
+    "mitarbeiter_zahl": 5700,
+    "mitarbeiter_basis": "DE_firma",
+    "status": "completed",
+    "notiz": "DE-Karriereportal karriere.akkodis.com (Next.js-SSR, Typesense); typesenseJobCounts=2009 (SSR, reproduzierbar) = Anzahl offene Jobs gesamt DE; Sitemap nur 925 offer-URLs (inkrementell, unvollstaendig) - Abweichung dokumentiert",
+    "parser": "html",
+    "url": "https://karriere.akkodis.com/",
+    "patterns": {
+      "job_count": "\"typesenseJobCounts\"\\s*:\\s*(\\d+)"
+    }
+  },
+  "alb_fils_klinikum": {
+    "firma": "ALB FILS KLINIKUM GmbH",
+    "industry": "Gesundheitswesen",
+    "headquarter": "Göppingen",
+    "mitarbeiter_zahl": 2485,
+    "mitarbeiter_basis": "DE_firma",
+    "status": "completed",
+    "notiz": "Stellenboerse alb-fils-klinikum.de ueber b-ite JobsApi v1 (api-loader); page.total=56 offene Jobs (channel 0, public key) reproduzierbar; verifiziert via test_integration 22.09.2026",
+    "parser": "bite",
+    "url": "https://jobs.b-ite.com/api/v1/postings/search",
+    "api_key": "f274cdb6a6cde000cdcaf8a8789f4f4b5b5dcad7",
+    "channel": 0
+  },
+  "albert_ziegler_gmbh": {
+    "firma": "Albert Ziegler GmbH",
+    "industry": "Sonderfahrzeugbau",
+    "headquarter": "Giengen",
+    "mitarbeiter_zahl": 1200,
+    "mitarbeiter_basis": "DE_firma",
+    "status": "completed",
+    "notiz": "Django-Board (coveto-Detailsignaturen) je Standort: jobs-giengen 40 offen (42 rows minus 2 Initiativbewerber) + jobs-rendsburg 4 offen = 44; htmx-POST /de/job/load_jobs/; verifiziert via test_integration 22.09.2026",
+    "parser": "htmx_table",
+    "load_path": "/de/job/load_jobs/",
+    "row_exclude": "initiativbewerber",
+    "urls": [
+      "https://www.ziegler.de/de/karriere/jobs-giengen/",
+      "https://www.ziegler.de/de/karriere/jobs-rendsburg/"
+    ]
+  },
+  "alexander_buerkle": {
+    "firma": "Alexander Bürkle GmbH & Co. KG",
+    "industry": "Elektrohandel / Technologie-Dienstleister",
+    "headquarter": "Freiburg im Breisgau",
+    "mitarbeiter_zahl": 1169,
+    "mitarbeiter_basis": "DE_firma",
+    "status": "completed",
+    "notiz": "Karriere-Uebersicht buerkle.de Karriere: 5 stellenanzeigen_* Links minus Initiativbewerbung = 4 offene Stellen (CMS, htmx-frei); verifiziert via test_integration 22.09.2026",
+    "parser": "link_count",
+    "link_pattern": "stellenanzeigen_[a-z0-9_-]+",
+    "exclude_pattern": "initiativbewerbung",
+    "url": "https://www.buerkle.de/de/unternehmen/karriere"
   }
 }

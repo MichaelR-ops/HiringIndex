@@ -3,10 +3,11 @@
 import re
 import requests
 from typing import Any, Callable, Dict, Mapping
+from urllib.parse import urljoin, urlparse, urlunparse
 from bs4 import BeautifulSoup
 
 
-JobCountParser = Callable[[str, Mapping[str, Any]], int]
+JobCountParser = Callable[[Mapping[str, Any]], int]
 
 
 def parse_html_job_count(config: Mapping[str, Any]) -> int:
@@ -197,8 +198,6 @@ def parse_brassring_job_count(config: Mapping[str, Any]) -> int:
             "BrassRing response does not contain a CSRF token"
         )
 
-    from urllib.parse import urljoin, urlparse
-
     api_url = "https://" + urlparse(page_url).netloc
     api_url = urljoin(api_url, "/TgNewUI/Search/Ajax/PowerSearchJobs")
 
@@ -238,6 +237,147 @@ def parse_brassring_job_count(config: Mapping[str, Any]) -> int:
     if total < 0:
         raise ValueError("BrassRing job count cannot be negative")
     return total
+
+
+def parse_bite_job_count(config: Mapping[str, Any]) -> int:
+    """Fetch a b-ite jobs API listing and return its total job count.
+
+    The b-ite JobsApi (v1) is used by German employer career pages (e.g.
+    ALB FILS KLINIKUM). A cross-origin fetch is accepted when the public
+    listing API key and channel are sent in the JSON body.
+    """
+    target_url = config.get("url", None)
+    if not isinstance(target_url, str) or not target_url:
+        raise ValueError("No b-ite posting search URL configured")
+    api_key = config.get("api_key", None)
+    if not isinstance(api_key, str) or not api_key:
+        raise ValueError("No b-ite api_key configured")
+
+    response = requests.post(
+        target_url,
+        json={
+            "key": api_key,
+            "channel": config.get("channel", 0),
+            "locale": config.get("locale", "de"),
+            "sort": {"by": "custom.prio", "order": "asc"},
+            "page": {"num": 1000},
+            "filter": {},
+        },
+        headers={
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0",
+        },
+        timeout=20,
+    )
+    response.raise_for_status()
+    data = response.json()
+    if not isinstance(data, Mapping):
+        raise ValueError("b-ite response must be a JSON object")
+
+    postings = data.get("jobPostings")
+    page = data.get("page")
+    if isinstance(page, Mapping) and isinstance(page.get("total"), int):
+        total = page["total"]
+    elif isinstance(postings, list):
+        total = len(postings)
+    else:
+        raise ValueError("b-ite response does not contain a job count")
+    if isinstance(total, bool) or not isinstance(total, int):
+        raise ValueError("b-ite response does not contain an integer job count")
+    if total < 0:
+        raise ValueError("b-ite job count cannot be negative")
+    return total
+
+
+def parse_htmx_table_job_count(config: Mapping[str, Any]) -> int:
+    """Count open positions behind htmx-loaded job tables (e.g. Django boards).
+
+    Some career sites render the job list only after the page triggers an
+    htmx POST to a ``load_path`` endpoint on load. The response is an HTML
+    table whose ``<tbody>`` contains one row per posting. Unspecific rows
+    (e.g. ``Initiativbewerber``) are skipped via the ``row_exclude`` regex.
+    """
+    page_urls = config.get("urls", None)
+    if not isinstance(page_urls, list) or not page_urls:
+        raise ValueError("htmx_table parser requires a list of career page URLs")
+    load_path = config.get("load_path", "/de/job/load_jobs/")
+    if not isinstance(load_path, str) or not load_path:
+        raise ValueError("htmx_table parser load_path must be a non-empty string")
+    row_exclude = config.get("row_exclude", None)
+
+    session = requests.Session()
+    session.headers.update({"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0"})
+
+    total = 0
+    for page_url in page_urls:
+        page = session.get(page_url, timeout=20)
+        page.raise_for_status()
+        html = page.text
+        token_match = re.search(
+            r'name="csrfmiddlewaretoken" value="([^"]+)"', html
+        )
+        loc_match = re.search(r'name="location_id" value="([0-9]+)"', html)
+        if not token_match or not loc_match:
+            raise ValueError("htmx_table page does not contain CSRF/location_id fields")
+
+        parsed = urlparse(page_url)
+        api_url = urlunparse((parsed.scheme, parsed.netloc, load_path, "", "", ""))
+        response = session.post(
+            api_url,
+            data={"location_id": loc_match.group(1), "search": ""},
+            headers={
+                "Referer": page_url,
+                "X-CSRFToken": token_match.group(1),
+                "X-Requested-With": "XMLHttpRequest",
+            },
+            timeout=20,
+        )
+        response.raise_for_status()
+        table = response.text
+        tbody = re.search(r"<tbody>(.*?)</tbody>", table, flags=re.S)
+        rows = re.findall(r"<tr[^>]*>(.*?)</tr>", tbody.group(1) if tbody else "", flags=re.S)
+        for row in rows:
+            if row_exclude and re.search(row_exclude, row, re.IGNORECASE):
+                continue
+            total += 1
+    return total
+
+
+def parse_link_count_job_count(config: Mapping[str, Any]) -> int:
+    """Count open positions from links on a CMS career overview page.
+
+    A CMS career page renders one link per open position (e.g. links whose
+    slug contains ``stellenanzeigen_``). A configurable ``link_pattern``
+    matches the per-position links and an optional ``exclude_pattern`` skips
+    unspecific entries (e.g. ``initiativbewerbung``).
+    """
+    page_url = config.get("url", None)
+    if not isinstance(page_url, str) or not page_url:
+        raise ValueError("link_count parser URL must be a non-empty string")
+    link_pattern = config.get("link_pattern", None)
+    if not isinstance(link_pattern, str) or not link_pattern:
+        raise ValueError("link_count parser requires a link_pattern regular expression")
+    exclude_pattern = config.get("exclude_pattern", None)
+    if exclude_pattern is not None and not isinstance(exclude_pattern, str):
+        raise ValueError("link_count parser exclude_pattern must be a string")
+
+    response = requests.get(
+        page_url,
+        headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0"},
+        timeout=20,
+    )
+    response.raise_for_status()
+    slugs = set(re.findall(link_pattern, response.text))
+    if exclude_pattern:
+        slugs = {
+            slug
+            for slug in slugs
+            if not re.search(exclude_pattern, slug, re.IGNORECASE)
+        }
+    if not slugs:
+        raise ValueError("link_count page does not contain any position links")
+    return len(slugs)
 
 
 def extract_job_count(

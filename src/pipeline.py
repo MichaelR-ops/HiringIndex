@@ -11,6 +11,9 @@ from .parser import (
     parse_workday_job_count,
     parse_sap_successfactors_job_count,
     parse_brassring_job_count,
+    parse_bite_job_count,
+    parse_htmx_table_job_count,
+    parse_link_count_job_count,
 )
 from .calculator import calculate_hiring_index
 from .config import load_company_config
@@ -41,6 +44,9 @@ def process_companies(
         "workday": parse_workday_job_count,
         "sap_successfactors": parse_sap_successfactors_job_count,
         "brassring": parse_brassring_job_count,
+        "bite": parse_bite_job_count,
+        "htmx_table": parse_htmx_table_job_count,
+        "link_count": parse_link_count_job_count,
     }
     results: List[Dict[str, Any]] = []
 

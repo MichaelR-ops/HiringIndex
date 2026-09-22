@@ -7,6 +7,20 @@ Für jede Firma aus `config/firmen.json` eine konfigurierte Job-Count-Extraktion
 
 | key | firma | parser | Count | Anmerkung |
 |---|---|---|---|---|
+| akkodis_germany | Akkodis Germany GmbH | html | 2009 | `typesenseJobCounts`-Regex (Next.js-SSR); DE-Portal, Sitemap unvollständig (925) |
+| alb_fils_klinikum | ALB FILS KLINIKUM GmbH | bite | 56 | b-ite JobsApi v1 POST, `page.total` via public key+channel 0 |
+| albert_ziegler_gmbh | Albert Ziegler GmbH | htmx_table | 44 | Django/htmx `load_jobs` je Standort: Giengen 40 (2 Initiativ abgezogen) + Rendsburg 4 |
+| alexander_buerkle | Alexander Bürkle GmbH & Co. KG | link_count | 4 | CMS-Links `stellenanzeigen_*` minus Initiativbewerbung |
+
+## Refactor 22.09.2026 (Parser-Abdeckung + Imports)
+- Keine bestehenden Parser deckten b-ite-JSON, htmx/CSRF-Table-Boards oder Link-Matches ab; daher als **generische Plattform-Parser** umgesetzt:
+  - `bite` → `parse_bite_job_count()` (wie workday/sap/brassring plattformgebunden, config: url/api_key/channel)
+  - `ziegler` → **`htmx_table`** `parse_htmx_table_job_count()` (config: urls, load_path, row_exclude)
+  - `buerkle` → **`link_count`** `parse_link_count_job_count()` (config: url, link_pattern, exclude_pattern)
+- Alle `urllib.parse`-Imports von Funktions-Rumpf auf Modul-Ebene in `src/parser.py` gezogen; `JobCountParser`-Typhalias korrigiert.
+- Registry (`pipeline.py`), `test_integration.py` PARSERS und `config/companies.json` auf neue Namen migriert.
+| a_raymond_gmbh_co_kg | A. Raymond GmbH & Co. KG | html | 9 | careers.araymond.com (Drupal), `article.node-offer`; EN+DE identisch, global |
+| agilent_technologies | Agilent Technologies Deutschland GmbH | workday | 360 | `agilent.wd5.myworkdayjobs.com/.../jobs` `total`; global, DE-Facet nicht verfügbar |
 | abb_ag | ABB AG | html | 2103 | `"totalHits"`-Regex (SSR-JSON), careers.abb/dach/de/search-results |
 | acps_automotive | ACPS Automotive GmbH | sap_successfactors | 16 | services/recruiting/v1/jobs |
 | adk_gmbh | ADK GmbH für Gesundheit und Soziales | html | 65 | `div.joboffer_outer`, eine Seite, keine Pagination |
@@ -14,11 +28,9 @@ Für jede Firma aus `config/firmen.json` eine konfigurierte Job-Count-Extraktion
 | aesculap_ag | Aesculap AG (B. Braun) | sap_successfactors | 253 | jobs.bbraun.com/services/recruiting/v1/jobs, de_DE-Default |
 
 ## Als Nächstes (Reihenfolge aus firmen.json, Key → bekannte Daten)
-1. **Agilent Technologies Deutschland GmbH** – 15500 MA, Workday! API-URL vorhanden: `https://agilent.wd5.myworkdayjobs.com/wday/cxs/agilent/Agilent_Careers/jobs` → `workday`-Parser (Achtung: Deutschlandfilter? erst global zählen, Scope in notiz). Firma laut TaskAgent-Name aus Kontext: "Agilent Technologies Sales & Services GmbH & Co. KG" (1050).
-2. **Akkodis Germany GmbH** – 5700 MA, "Eigenes Portal" `https://karriere.akkodis.com/` → vermutlich Html/JS.
-3. **ALB FILS KLINIKUM GmbH** – 2485 MA, keine URL bekannt → Karriereseite googeln (klinik.de-Footer/Jobs).
-4. **Albert Ziegler GmbH** – 1200 MA, keine URL.
-5. **Alexander Bürkle GmbH & Co. KG** – 1169 MA, keine URL.
+1. **Alfred Kärcher SE & Co. KG** – 16000 MA, „Eigenes Portal“ `https://careers.kaercher.com/` → Plattform prüfen.
+2. **Amann & Söhne GmbH & Co. KG** – 2696 MA, keine URL.
+3. **Amcor Flexibles Singen GmbH** – 48000 MA, Konzernportal `https://www.amcor.com/careers`.
 
 ## Plattform-Muster (bei kombinierten Konzernseiten zuerst prüfen)
 - **ABB**: careers.abb (ServiceNow/SSR) → Regex auf Timeline/JSON-Feld im HTML.

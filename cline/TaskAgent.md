@@ -1,5 +1,16 @@
 # Sub‑Agenten‑Aufgabe – a_raymond_gmbh_co_kg
 
+## Firmen‑Sektion (vom Orchestrator gesetzt)
+
+- **Firma**: Alfred Kärcher SE & Co. KG
+- **Mitarbeiterzahl**: 16000 (aus `config/firmen.json`)
+- **Industry**: Maschinenbau, Reinigungstechnik
+- **Headquarter**: Winnenden
+- **Bekannte career‑URLs/Software**: „Eigenes Portal“ `https://careers.kaercher.com/` → Plattform prüfen (global; möglichst DE-Bezug), URLs/Pattern aus bestehenden Muster ableiten
+- **Bestehender Eintrag**: KEIN Eintrag in `config/companies.json` → neuen Key anlegen (Vorschlag `kaercher`)
+- **Gewünschter Parser**: offen → Plattform/Endpoint erkennen; bestehenden Parser bevorzugen oder neues Muster ergänzen
+- **Erfolgskriterium**: `test_integration.py` mit `COMPANY_KEY="kaercher"` liefert positiven Integer > 0 (kein NaN, kein 0)
+
 ## Ziel
 
 ### Zentrale Anweisung
